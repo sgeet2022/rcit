@@ -1,0 +1,18 @@
+mixin tour-modern(obj)
+	article.tour-modern&attributes(attributes)
+		.tour-modern-media
+			a.tour-modern-figure(href=obj.link ? obj.link : 'single-tour.html'): +jpg(obj.img).tour-modern-image
+			.tour-modern-pricing
+				p.tour-modern-price.tour-modern-price-new=obj.price
+		.tour-modern-main
+			h4.tour-modern-title: a(href=obj.link ? obj.link : 'single-tour.html')=obj.title
+			.tour-modern-info
+				p.tour-modern-rating=obj.info.rating
+				p.tour-modern-reviews: a(href=obj.link ? obj.link : 'single-tour.html')=obj.info.reviews
+			block
+			ul.tour-modern-meta
+				each item in obj.meta 
+					li
+						span.icon(class=item.icon)
+						span=item.text
+

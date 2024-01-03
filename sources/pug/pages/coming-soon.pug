@@ -1,0 +1,47 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Under Construction'
+
+block page 
+	// Page content
+	section.section.section-single
+		.section-single-inner
+			.section-single-left
+				.section-single-header
+					// Brand
+					+logo
+	
+				.section-single-main
+					p.big.text-uppercase Our website is coming soon
+					h2(style='max-width: 13em;') We are preparing our website for you
+					// Countdown
+					.countdown.countdown-classic(data-type='until' data-time='31 Dec 2022 16:00' data-format='dhms' data-style='short')
+					h5.fw-sbold.mt-30.mt-md-45 Notify me on launch:
+					form.rd-form.rd-mailform.form-inline.form-lg(
+					data-form-output='form-output-global'
+					data-form-type='subscribe'
+					method='post'
+					action='bat/rd-mailform.php')
+						.form-wrap.form-wrap-icon
+							input.form-input(id='subscribe-form-email' type='email' name='email' data-constraints='@Email @Required')
+							label.form-label(for='subscribe-form-email') E-mail
+							.icon.form-icon.mdi.mdi-email-outline
+						.form-button
+							button.button.button-lg.button-primary(type='submit') Subscribe
+					p.small We respect your privacy, so won’t share your info
+	
+	
+				.section-single-footer
+					h5.fw-sbold Stay in touch
+					.group.group-sm
+						a.link-1.link-1-social.icon.mdi.mdi-facebook(href='#')
+						a.link-1.link-1-social.icon.mdi.mdi-instagram(href='#')
+						a.link-1.link-1-social.icon.mdi.mdi-behance(href='#')
+						a.link-1.link-1-social.icon.mdi.mdi-twitter(href='#')
+			.section-single-right.d-none.d-xl-flex
+				article.thumbnail-1.bg-image.bg-vide(data-vide-bg='video/video' style='background-image: url(video/video.jpg);' data-vide-options='posterType: jpg')
+					.thumbnail-1-inner
+						a.thumbnail-1-play(href='#' data-vide-toggle=''): span.icon
+					

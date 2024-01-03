@@ -1,0 +1,83 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-post-classic
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Grid Blog'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+	section.section.section-lg.bg-default
+		.container
+			.row.row-40.row-md-50.row-xxl-80
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-1-339x251',
+						title: '7 Reasons to Study in Class Rather than Study Alone',
+						time: {
+							datetime: '2021',
+							time: 'April 24, 2021'
+						}
+					})
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-3-339x251',
+						title: '5 Reasons Why You Should Consider Doing the FCE',
+						time: {
+							datetime: '2021',
+							time: 'May 12, 2021'
+						}
+					})
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-4-339x251',
+						title: 'Learn English in London with Our Language School',
+						time: {
+							datetime: '2021',
+							time: 'June 19, 2021'
+						}
+					})
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-2-339x251',
+						title: 'Test of Interactive English: Personal Experience',
+						time: {
+							datetime: '2021',
+							time: 'July 25, 2021'
+						}
+					})
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-5-339x251',
+						title: '60 Everyday Words & Phrases You Need to Know to Speak English',
+						time: {
+							datetime: '2021',
+							time: 'August 14, 2021'
+						}
+					})
+				.col-sm-6.col-lg-4
+					+post-classic({
+						img: 'grid-blog-6-339x251',
+						title: 'English Language Courses for Post-Graduates',
+						time: {
+							datetime: '2021',
+							time: 'September 1, 2021'
+						}
+					})
+				.col-12
+					nav.pagination-outer.text-center
+						ul.pagination
+							li.page-item.active: a.page-link(href='#') 1
+							li.page-item: a.page-link(href='#') 2
+							li.page-item: a.page-link(href='#') 3
+
+	// Page Footer
+	include ../sections/_footer-classic-2

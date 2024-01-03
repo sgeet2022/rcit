@@ -1,0 +1,11 @@
+include _ui-navbar-classic
+
+mixin header-classic(obj)
+	header.section.page-header.page-header-1.context-dark
+		.page-header-1-figure.m-parallax: .page-header-1-image.m-parallax-image(style='background-image: url(images/' + obj.bgImage + '.jpg);')
+		+navbar-classic
+		+breadcrumbs({
+			title: obj.title,
+			parallax: true
+		})
+			block

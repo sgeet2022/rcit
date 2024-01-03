@@ -1,0 +1,76 @@
+footer.section.footer-classic.footer-classic-md
+	.footer-classic-main
+		.container: .footer-classic-layout.justify-content-sm-around.justify-content-md-between.divider-4
+			.footer-classic-layout-item
+				+logo
+				.footer-classic-item-block.footer-classic-item-block-1
+					h6 10000+ Satisfied Students
+					.owl-carousel-quote-light
+						// Owl Carousel
+						.owl-carousel(
+						data-items='1'
+						data-dots='false'
+						data-nav='false'
+						data-stage-padding='0'
+						data-loop='true'
+						data-margin='30'
+						data-nav-custom='#footer-owl-nav'
+						data-animation-in='fadeIn'
+						data-animation-out='fadeOut'
+						data-mouse-drag='false')
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q The staff here is really supportive, teachers are great, the school has a good structure. Thank you!
+									cite.quote-light-cite Jane Smith
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q I am really enjoying my experience here. Teachers are very friendly and there is a friendly atmosphere.
+									cite.quote-light-cite Peter McMillan
+							blockquote.quote-light.quote-light-sm
+								.icon.linearicons-quote-open.text-primary.icon-md
+								.quote-light-main
+									.quote-light-text: q I like that it has a busy atmosphere but it’s never stressful. Everyone is very nice and you can ask anything at any time.
+									cite.quote-light-cite Kate Wilson
+						#footer-owl-nav.owl-nav
+							button.owl-arrow.owl-arrow-prev(aria-label='Prev'): +svg-prev
+							.owl-nav-divider
+							button.owl-arrow.owl-arrow-next(aria-label='Next'): +svg-next
+
+			.footer-classic-layout-item
+				h6.footer-classic-title.inset-3 Popular Courses
+				.footer-classic-item-block.footer-classic-item-block-3
+					ul.list-pricing
+						li: a(href='english-for-business.html')
+							span.list-pricing-title English for Kids
+							span $45
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Online Learning
+							span $15
+						li: a(href='english-for-business.html')
+							span.list-pricing-title German Club
+							span $36
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Personal Lessons
+							span $21
+						li: a(href='english-for-business.html')
+							span.list-pricing-title Group Lessons
+							span $35
+
+			.footer-classic-layout-item
+				h6.footer-classic-title.inset-3 Get in Touch
+				.footer-classic-item-block
+					ul.list.list-1
+						li: a(href='#') Send a Message
+						li: a(href='contact-us.html') Contacts
+						li: a(href='#') Request a Callback
+					ul.list-inline.list-inline-md
+						li: a.link-2.icon.mdi.mdi-instagram(href='#')
+						li: a.link-2.icon.mdi.mdi-facebook(href='#')
+						li: a.link-2.icon.mdi.mdi-youtube-play(href='#')
+
+	.container.mt-0: .divider-2
+	.footer-classic-aside
+		.container
+			+rights

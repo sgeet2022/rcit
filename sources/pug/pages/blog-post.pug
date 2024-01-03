@@ -1,0 +1,187 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-post-classic
+
+block variables
+	- var activeCategory = 'blog'
+	- var pageName = 'Blog Post'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: 'Why You Should Consider Doing the FCE',
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+	section.section.section-md.bg-default
+		.container
+			article.blog-layout
+				.blog-layout-main
+					.blog-layout-main-item
+						article.post-corporate
+							+jpg('blog-post-1-768x396').post-corporate-image
+							ul.post-corporate-meta
+								li
+									span.icon.mdi.mdi-calendar-today
+									time(datetime='2021') May 12, 2021
+								li
+									span.icon.mdi.mdi-account
+									span John Doe
+								li
+									span.icon.mdi.mdi-tag-outline
+									span News
+
+							.post-corporate-divider
+							h3.title-costume.post-corporate-title Top 5 Reasons to Do the FCE
+							p Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue. Fusce eget arcu et nibh dapibus maximus consectetur in est.
+							p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							// Quote Primary
+							blockquote.quote-primary
+								.quote-primary-text: p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+								.quote-primary-footer
+									+svg-wave-line.quote-primary-line(role='presentation')
+									p.heading-5.quote-primary-cite Jane Smith
+							h3.title-costume.post-corporate-title What is the First Certificate of English?
+							p Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.
+							.post-corporate-gallery(data-lightgallery='group')
+								a.post-corporate-thumbnail.post-corporate-thumbnail-1(href='images/blog-post-2-original.jpg' data-lightgallery='item')
+									+jpg('blog-post-2-768x396').post-corporate-thumbnail-image
+								a.post-corporate-thumbnail.post-corporate-thumbnail-2(href='images/blog-post-3-original.jpg' data-lightgallery='item')
+									+jpg('blog-post-3-278x331').post-corporate-thumbnail-image
+								a.post-corporate-thumbnail.post-corporate-thumbnail-3(href='images/blog-post-4-original.jpg' data-lightgallery='item')
+									+jpg('blog-post-4-480x331').post-corporate-thumbnail-image
+							p Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue.
+							ul.post-corporate-tags
+								li: a(href='#') News
+								li: a(href='#') Blog
+								li: a(href='#') English
+							.post-corporate-divider
+							.post-corporate-footer
+								h5.fw-sbold Share this post
+								div: .group.group-sm
+									a.link-1.icon.mdi.mdi-facebook(href='#')
+									a.link-1.icon.mdi.mdi-instagram(href='#')
+									a.link-1.icon.mdi.mdi-behance(href='#')
+									a.link-1.icon.mdi.mdi-twitter(href='#')
+
+					.blog-layout-main-item
+						h3.title-costume Related Posts
+						.row.row-40
+							.col-sm-6
+								+post-classic({
+									img: 'grid-blog-4-339x251',
+									title: 'Learn English in London with Our Language School',
+									time: {
+										datetime: '2021',
+										time: 'April 24, 2021'
+									}
+								}).ms-sm-0
+							.col-sm-6
+								+post-classic({
+									img: 'grid-blog-5-339x251',
+									title: '60 Everyday Words & Phrases You Need to Know to Speak English',
+									time: {
+										datetime: '2021',
+										time: 'May 12, 2021'
+									}
+								}).me-sm-0
+					.blog-layout-main-item
+						h3.title-costume Leave a Reply
+						// RD Mailform
+						form.rd-form.rd-mailform.form-lg(
+						data-form-output='form-output-global'
+						data-form-type='contact'
+						method='post'
+						action='bat/rd-mailform.php')
+							.row.row-30
+								.col-md-6
+									.form-wrap.form-wrap-icon
+										input#contact-name.form-input(type='text' name='name' data-constraints='@Required')
+										label.form-label(for='contact-name') Name
+										.icon.form-icon.mdi.mdi-account-outline.text-primary
+								.col-md-6
+									.form-wrap.form-wrap-icon
+										input#contact-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+										label.form-label(for='contact-email') E-mail
+										.icon.form-icon.mdi.mdi-email-outline.text-primary
+								.col-12
+									.form-wrap.form-wrap-icon
+										label.form-label(for='contact-message') Message
+										textarea#contact-message.form-input(name='message' data-constraints='@Required')
+										.icon.form-icon.mdi.mdi-message-outline.text-primary
+							.form-wrap.form-wrap-button
+								button.button.button-lg.button-primary(type='submit') Send
+
+				.blog-layout-aside
+					.blog-layout-aside-item
+						// RD Search
+						form.rd-search.rd-search-inline.block-2.block-centered(action='search-results.html' method='GET')
+							.form-wrap
+								label.form-label(for='rd-search-form-input') Search...
+								input.form-input(id='rd-search-form-input' type='text' name='s' autocomplete='off')
+							.form-button
+								button.rd-search-submit(type='submit')
+					.blog-layout-aside-item
+						h3 Categories
+						ul.list-categories
+							li: a(href='#')
+								span.lc-text News
+								span.lc-counter 6
+							li: a(href='#')
+								span.lc-text Blog
+								span.lc-counter 6
+							li: a(href='#')
+								span.lc-text English
+								span.lc-counter 12
+							li: a(href='#')
+								span.lc-text Language
+								span.lc-counter 9
+							li: a(href='#')
+								span.lc-text Tips
+								span.lc-counter 9
+					.blog-layout-aside-item
+						h3 Latest Posts
+						.group-post-minimal
+							article.post-minimal
+								a.post-minimal-media(href=links.post): +jpg('blog-post-5-79x78').post-minimal-image
+								.post-minimal-main
+									h6.post-minimal-title: a(href=links.post) Learn English in London with Us
+									time.post-minimal-time(datetime='2021') May 12, 2021
+							article.post-minimal
+								a.post-minimal-media(href=links.post): +jpg('blog-post-6-79x78').post-minimal-image
+								.post-minimal-main
+									h6.post-minimal-title: a(href=links.post) Reasons to Study in Class with Friends
+									time.post-minimal-time(datetime='2021') June 19, 2021
+							article.post-minimal
+								a.post-minimal-media(href=links.post): +jpg('blog-post-7-79x78').post-minimal-image
+								.post-minimal-main
+									h6.post-minimal-title: a(href=links.post) Test of Interactive English
+									time.post-minimal-time(datetime='2021') July 25, 2021
+
+					.blog-layout-aside-item
+						// Tour Light
+						article.tour-light.bg-image.context-dark(style='background-image: url(images/blog-post-8.jpg);'): .tour-light-inner
+							.tour-light-header
+								.tour-light-badge Sale
+								.tour-light-pricing.tour-light-inset
+							.tour-light-main.tour-light-inset
+								h3.title-costume.tour-light-title: a(href='english-for-business.html') English For Kids
+
+					.blog-layout-aside-item
+						h4 Subscribe
+						form.rd-form.rd-mailform(
+						data-form-output='form-output-global'
+						data-form-type='subscribe'
+						method='post'
+						action='bat/rd-mailform.php')
+							.form-wrap.form-wrap-icon
+								input.form-input(id='subscribe-form-email' type='email' name='email' data-constraints='@Email @Required')
+								label.form-label(for='subscribe-form-email') E-mail
+								.icon.form-icon.mdi.mdi-email-outline
+							.form-wrap.mt-30
+								button.button.button-block.button-lg.button-primary(type='submit') Send
+
+	// Page Footer
+	include ../sections/_footer-classic-2

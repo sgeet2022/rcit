@@ -1,0 +1,8 @@
+mixin destination-1(obj)
+	a.destination-1.context-dark(href=obj.link ? obj.link : 'single-destination.html')&attributes(attributes)
+		figure.destination-1-figure
+			.destination-1-image.bg-image(style='background-image: url(images/' + obj.img + '.jpg);')
+		.destination-1-caption
+			p.destination-1-decoration-title=obj.title
+			p.heading-3.destination-1-title=obj.title
+			.destination-1-comment: span=obj.comment

@@ -1,0 +1,47 @@
+include _ui-tour-minimal
+
+mixin navbar-creative(obj)
+	// RD Navbar
+	.rd-navbar-wrap
+		nav.rd-navbar.rd-navbar-creative(
+		data-layout=                'rd-navbar-fixed'
+		data-sm-layout=             'rd-navbar-fixed'
+		data-md-layout=             'rd-navbar-fixed'
+		data-md-device-layout=      'rd-navbar-fixed'
+		data-lg-layout=             'rd-navbar-static'
+		data-lg-device-layout=      'rd-navbar-fixed'
+		data-xl-layout=             'rd-navbar-static'
+		data-xl-device-layout=      'rd-navbar-static'
+		data-lg-stick-up-offset=    '95px'
+		data-xl-stick-up-offset=    '95px'
+		data-xxl-stick-up-offset=   '95px'
+		data-lg-stick-up=           'true'
+		data-xl-stick-up=           'true'
+		data-xxl-stick-up=          'true')&attributes(attributes)
+			.rd-navbar-main-outer
+				.rd-navbar-main
+					// RD Navbar Panel
+					.rd-navbar-panel
+						// RD Navbar Toggle
+						button.rd-navbar-toggle(data-rd-navbar-toggle='.rd-navbar-nav-wrap, .rd-navbar-toggle-element')
+							span.rd-navbar-toggle-inner
+								span.rd-navbar-toggle-element: span
+								span.rd-navbar-toggle-text.on Menu
+								span.rd-navbar-toggle-text.off Close
+						// RD Navbar Brand
+						.rd-navbar-brand
+							+logo
+
+					.rd-navbar-aside-outer
+						button.rd-navbar-aside-toggle(data-multitoggle='#rd-navbar-aside' aria-label='Aside Toggle'): span
+						#rd-navbar-aside.rd-navbar-aside
+							ul.rd-navbar-aside-list
+								li
+									span.icon.mdi.mdi-map-marker
+									a(href='#') 9 Valley St. Brooklyn, NY 11203
+								li
+									span.icon.mdi.mdi-phone
+									a(href='tel:#') 1-800-346-6277
+
+				.rd-navbar-nav-wrap
+					include ../includes/_navigation

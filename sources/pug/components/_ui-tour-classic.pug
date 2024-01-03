@@ -1,0 +1,16 @@
+mixin tour-classic(obj)
+	article.tour-classic&attributes(attributes)
+		.tour-classic-media
+			a.tour-classic-figure(href=obj.link ? obj.link : 'english-for-business.html'): +jpg(obj.img).tour-classic-image
+			.tour-classic-pricing
+				if(obj.priceOld)
+					p.tour-classic-price.tour-classic-price-old=obj.priceOld
+				p.tour-classic-price.tour-classic-price-new=obj.price
+		.tour-classic-body
+			h3.tour-classic-title: a(href=obj.link ? obj.link : 'english-for-business.html')=obj.title
+			.tour-classic-footer
+				span.mdi.mdi-account-outline
+				p.tour-classic-caption=obj.caption
+
+
+

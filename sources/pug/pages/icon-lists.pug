@@ -1,0 +1,46 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Icon Lists'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+	include ../sections/_section-features
+
+	section.section.section-lg.bg-default
+		.container
+			ul.list-group-2.row.row-50
+				li.col-sm-6.col-lg-4
+					article.lg-2-item
+						.lg-2-item-aside.bg-box-1
+							.icon.lg-2-item-icon.mdi.mdi-checkbox-marked-circle-outline
+							span.lg-2-item-counter
+						.lg-2-item-main
+							h4.lg-2-item-title Quick Results
+							p Get quick and guaranteed results with the best teachers.
+				li.col-sm-6.col-lg-4
+					article.lg-2-item
+						.lg-2-item-aside
+							.icon.lg-2-item-icon.mdi.mdi.mdi-coin
+							span.lg-2-item-counter
+						.lg-2-item-main
+							h4.lg-2-item-title Save Money
+							p You can save a lot of money on our lessons & resources.
+				li.col-sm-6.col-lg-4
+					article.lg-2-item
+						.lg-2-item-aside.bg-tertiary
+							.icon.lg-2-item-icon.mdi.mdi-comment-multiple-outline
+							span.lg-2-item-counter
+						.lg-2-item-main
+							h4.lg-2-item-title Get Support
+							p Our staff and teachers are always ready to help you.
+
+	// Page Footer
+	include ../sections/_footer-classic-2

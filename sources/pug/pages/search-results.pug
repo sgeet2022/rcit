@@ -1,0 +1,31 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Search Results'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+
+	// Search results
+	section.section.section-md.bg-default
+		.container
+			.row.row-40.justify-content-center
+				.col-xl-10
+					// RD Search
+					form.rd-search.rd-search-inline(action='search-results.html' method='GET')
+						.form-wrap
+							label.form-label(for='rd-search-form-input') Search...
+							input.form-input(id='rd-search-form-input' type='text' name='s' autocomplete='off')
+						.form-button
+							button.rd-search-submit(type='submit')
+					.rd-search-results
+
+	// Page Footer
+	include ../sections/_footer-classic-2

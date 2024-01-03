@@ -1,0 +1,37 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Buttons'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.  
+		
+	// Button Sizes
+	section.section.section-md.section-first.bg-default
+		.container
+			h3 Button Sizes
+			.group-lg.group-middle
+				.button.button-lg.button-primary Large size
+				.button.button-primary Medium size
+				.button.button-sm.button-primary Small size
+
+	// Buttons with Icons
+	section.section.section-md.section-last.bg-default
+		.container
+			h3 Buttons with Icons
+			.group-lg.group-middle
+				.button.button-lg.button-icon.button-icon-left.button-primary
+					span.icon.mdi.mdi-magnify
+					| Icon left
+				.button.button-lg.button-icon.button-icon-right.button-primary
+					span.icon.mdi.mdi-magnify
+					| Icon right
+
+	// Page Footer
+	include ../sections/_footer-classic-2

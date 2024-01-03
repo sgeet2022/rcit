@@ -1,0 +1,437 @@
+extends  ../_skeleton
+
+//- Includes
+include ../components/_ui-card
+include ../components/_ui-box-4
+include ../components/_ui-progress-bar-linear
+
+block variables
+	- var activeCategory = 'Our Courses'
+	- var pageName = 'English For Business'
+
+block page
+	// Page Header
+	+header-classic({
+		title: 'English for Business',
+		bgImage: 'bg-image-4'
+	})
+		.group.group-sm.group-middle
+			a.button.button-sm.button-icon.button-icon-left.button-light(data-lightgallery='item' href='https://www.youtube.com/watch?v=dk9uNWPP7EA')
+				span.icon.mdi.mdi-play
+				| presentation
+
+
+	section.section
+		// Bootstrap tabs
+		#tabs-1.tabs-custom.tabs-complex
+			button.tabs-complex-nav-toggle(data-multitoggle='#tabs-complex-nav' data-isolate='#tabs-complex-nav')
+				span Navigation
+				span.icon.mdi.mdi-chevron-down
+			// Nav tabs
+			ul.nav.nav-tabs#tabs-complex-nav
+				li.nav-item(role='presentation')
+					a.nav-link.active(href='#tabs-1-1' data-bs-toggle='tab')
+						span.icon.mdi.mdi-information-outline
+						span.fw-medium Information
+				li.nav-item(role='presentation')
+					a.nav-link(href='#tabs-1-2' data-bs-toggle='tab')
+						span.icon.mdi.mdi-map
+						span.fw-medium Course plan
+				li.nav-item(role='presentation')
+					a.nav-link(href='#tabs-1-3' data-bs-toggle='tab')
+						span.icon.mdi.mdi-map-marker
+						span.fw-medium Location
+				li.nav-item(role='presentation')
+					a.nav-link(href='#tabs-1-4' data-bs-toggle='tab')
+						span.icon.mdi.mdi-image-filter
+						span.fw-medium Gallery
+				li.nav-item(role='presentation')
+					a.nav-link(href='#tabs-1-5' data-bs-toggle='tab')
+						span.icon.mdi.mdi-comment-outline
+						span Reviews
+
+			// Tab panes
+			.tab-content
+				#tabs-1-1.tab-pane.fade.show.active
+					.container
+						.row.row-50
+							.col-lg-8
+								article.post-info.inset-1
+									h2.text-uppercase.fw-bold.post-info-title English for Business
+									.post-info-details
+										p.post-info-price $35
+										p.big per lesson
+									.post-info-meta
+										ul.post-info-meta-list
+											li
+												span.icon.mdi.mdi-clock
+												span 90 min
+											li
+												span.icon.mdi.mdi-star-outline
+												span Sam Johnson
+									p Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue. Fusce eget arcu et nibh dapibus maximus consectetur in est.
+									table.post-info-table
+										tr
+											td Location
+											td Room 5
+										tr
+											td Teacher
+											td Sam Johnson
+										tr
+											td Time
+											td 6:30 PM
+
+									h2.text-uppercase.fw-bold.mt-md-30.mt-lg-50.mt-xl-80.offset-top-40 Gallery
+									p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus et tortor pulvinar venenatis. Aliquam erat volutpat. Nam ultrices semper felis
+									.row.row-6.row-x-6(data-lightgallery='group')
+										.col-4
+											a.thumbnail-light(href='images/single-tour-1-original.jpg' data-lightgallery='item')
+												+jpg('single-tour-1-355x359').thumbnail-light-image
+										.col-4
+											a.thumbnail-light(href='images/single-tour-2-original.jpg' data-lightgallery='item')
+												+jpg('single-tour-2-355x359').thumbnail-light-image
+										.col-4
+											a.thumbnail-light(href='images/single-tour-3-original.jpg' data-lightgallery='item')
+												+jpg('single-tour-3-355x359').thumbnail-light-image
+
+							.col-lg-4
+								+box-4
+
+				#tabs-1-2.tab-pane.fade
+					.container
+						.row.row-50
+							.col-lg-8: .inset-1
+								// Bootstrap collapse
+								#accordion1.card-group-custom.card-group-timeline( role='tablist' aria-multiselectable='false' )
+									+card({
+										show: true,
+										parentId: 'accordion1',
+										title: 'Module 1: Management'
+									}).card-timeline
+										article.box-float-1
+											+jpg('single-tour-10-162x119')
+											p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit ut tortor pretium viverra. Et tortor consequat id porta.
+										.row.row-10
+											.col-sm-6
+												ul.list-marked
+													li Ut tellus elementum
+													li Sagittis vitae et
+											.col-sm-6
+												ul.list-marked
+													li Congue quisque egestas
+													li Diam in arcu cursus
+
+									+card({
+										parentId: 'accordion1',
+										title: 'Module 2: Production'
+									}).card-timeline
+										article.box-float-1
+											+jpg('single-tour-11-162x119')
+											p Urna cursus eget nunc scelerisque viverra mauris. Egestas maecenas pharetra convallis posuere. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat.
+										.row.row-10
+											.col-sm-6
+												ul.list-marked
+													li Sed id semper
+													li Risus in hendrerit
+											.col-sm-6
+												ul.list-marked
+													li Pharetra diam sit amet nisl
+													li Tempus imperdiet nulla
+
+									+card({
+										parentId: 'accordion1',
+										title: 'Module 3: Marketing'
+									}).card-timeline
+										article.box-float-1
+											+jpg('single-tour-12-162x119')
+											p Sed euismod nisi porta lorem mollis aliquam ut porttitor leo. Volutpat consequat mauris nunc congue nisi vitae suscipit. At imperdiet dui accumsan sit amet nulla facilisi.
+										.row.row-10
+											.col-sm-6
+												ul.list-marked
+													li Eu augue ut lectu
+													li Mauris nunc congue nisi vitae
+											.col-sm-6
+												ul.list-marked
+													li Dignissim suspendisse
+													li Fringilla urna porttitor
+
+									+card({
+										parentId: 'accordion1',
+										title: 'Module 4: Finance'
+									}).card-timeline
+										article.box-float-1
+											+jpg('single-tour-13-162x119')
+											p Ut placerat orci nulla pellentesque. Elementum integer enim neque volutpat ac tincidunt. Elementum nibh tellus molestie nunc non blandit massa. Leo in vitae turpis massa. Tincidunt augue interdum velit euismod in pellentesque massa placerat.
+										.row.row-10
+											.col-sm-6
+												ul.list-marked
+													li Volutpat commodo sed
+													li Purus gravida quis blandit
+											.col-sm-6
+												ul.list-marked
+													li Pulvinar etiam non
+													li Nunc mattis enim
+
+									+card({
+										parentId: 'accordion1',
+										title: 'Module 5: Economics'
+									}).card-timeline
+										article.box-float-1
+											+jpg('single-tour-14-162x119')
+											p Donec adipiscing tristique risus nec. Curabitur gravida arcu ac tortor dignissim convallis. At elementum eu facilisis sed. Placerat vestibulum lectus mauris ultrices eros.
+										.row.row-10
+											.col-sm-6
+												ul.list-marked
+													li Consectetur purus ut
+													li Eget aliquet nibh praesent
+											.col-sm-6
+												ul.list-marked
+													li Tempor orci eu lobortis
+													li Mauris rhoncus aenean vel
+
+							.col-lg-4
+								+box-4
+
+				#tabs-1-3.tab-pane.fade
+					.container
+						.row.row-50
+							.col-lg-8: .inset-1
+								.google-map-container(
+								data-center='9870 St Vincent Place, Glasgow, DC 45 Fr 45.'
+								data-zoom='4'
+								data-styles='[{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}]'
+								data-icon='images/gmap_marker.png'
+								data-icon-active='images/gmap_marker_active.png')
+									.google-map
+									ul.google-map-markers
+										li(
+										data-location='9870 St Vincent Place, Glasgow, DC 45 Fr 45.'
+										data-description='9870 St Vincent Place, Glasgow')
+								h3.mt-md-35 Location
+								p Pellentesque quis dui varius, dapibus velit id, iaculis ipsum. Morbi ac eros feugiat, lacinia elit ut elementum turpis. Curabitur justo sapien, tempus sit amet rutrum eu, commodo eu lacus. Morbi in ligula nibh. Maecenas ut mi at odio hendrerit eleifend tempor vitae augue. Fusce eget arcu et nibh dapibus maximus consectetur in est.
+							.col-lg-4
+								+box-4
+
+				#tabs-1-4.tab-pane.fade
+					.container
+						.row.row-50
+							.col-lg-8: .inset-1
+								h2.text-uppercase.fw-bold Gallery
+								p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere metus et tortor pulvinar venenatis. Aliquam erat volutpat. Nam ultrices semper felis, at laoreet metus
+								.row.row-6.row-x-6(data-lightgallery='group')
+									.col-4
+										a.thumbnail-light(href='images/single-tour-4-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-4-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-7-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-7-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-9-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-9-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-2-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-2-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-5-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-5-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-6-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-6-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-1-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-1-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-8-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-8-355x359').thumbnail-light-image
+									.col-4
+										a.thumbnail-light(href='images/single-tour-3-original.jpg' data-lightgallery='item')
+											+jpg('single-tour-3-355x359').thumbnail-light-image
+							.col-lg-4
+								+box-4
+
+				#tabs-1-5.tab-pane.fade
+					.container
+						.row.row-50
+							.col-lg-8: .inset-1
+								article.box-5
+									.box-5-aside
+										p.box-5-rating 9,5
+										h5.box-5-title Superb
+									.box-5-main
+										ul.box-5-list
+											li
+												+progress-bar-linear({
+													title: 'Content',
+													valueTo: '57'
+												}).tab-progress-bar(data-formatter='rating')
+											li
+												+progress-bar-linear({
+													title: 'Educational Resources',
+													valueTo: '78'
+												}).tab-progress-bar(data-formatter='rating')
+											li
+												+progress-bar-linear({
+													title: 'Received Knowledge',
+													valueTo: '68'
+												}).tab-progress-bar(data-formatter='rating')
+											li
+												+progress-bar-linear({
+													title: 'Results',
+													valueTo: '81'
+												}).tab-progress-bar(data-formatter='rating')
+											li
+												+progress-bar-linear({
+													title: 'Value for Money',
+													valueTo: '72'
+												}).tab-progress-bar(data-formatter='rating')
+
+								.comment-review-group
+									article.comment-review
+										+jpg('single-tour-15-86x86').comment-review-avatar
+										.comment-review-main
+											p.heading-5.comment-review-name Jane Smith
+											time(datetime='2021') October 5, 2021 at 1:44 pm
+											.comment-review-text
+												p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+											ul.comment-review-meta.review-meta
+												li
+													p Overall
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Knowledge
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Resources
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Content
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+
+									article.comment-review
+										+jpg('single-tour-16-86x86').comment-review-avatar
+										.comment-review-main
+											p.heading-5.comment-review-name Peter Wilson
+											time(datetime='2021') October 5, 2021 at 2:15 pm
+											.comment-review-text
+												p Silva, impositio, et eleates. Contencios experimentum, tanquam fatalis zelus. Bromiums cantare, tanquam varius eleates. Competition ires, tanquam bi-color adiurator. Eleates, devatio, et caesium. Zelus velums, tanquam salvus aonides. Bubos sunt eposs de secundus sectam.
+											ul.comment-review-meta.review-meta
+												li
+													p Overall
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Knowledge
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Resources
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+												li
+													p Content
+													ul.comment-review-rating.review-rating
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star.text-primary
+														li.icon.mdi.mdi-star
+														li.icon.mdi.mdi-star
+
+								h3.mt-40.mt-md-45.mt-xl-70 Write a Review
+								article.box-6
+									ul.comment-review-meta.review-meta
+										li
+											p Overall
+											ul.comment-review-rating.review-rating
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star
+												li.icon.mdi.mdi-star
+										li
+											p Knowledge
+											ul.comment-review-rating.review-rating
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star
+												li.icon.mdi.mdi-star
+										li
+											p Resources
+											ul.comment-review-rating.review-rating
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star
+												li.icon.mdi.mdi-star
+										li
+											p Content
+											ul.comment-review-rating.review-rating
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star.text-primary
+												li.icon.mdi.mdi-star
+												li.icon.mdi.mdi-star
+									// RD Mailform
+									form.rd-form.rd-mailform.form-lg(
+									data-form-output='form-output-global'
+									data-form-type='contact'
+									method='post'
+									action='bat/rd-mailform.php')
+										.row.row-30
+											.col-md-6
+												.form-wrap.form-wrap-icon
+													input#form-name.form-input(type='text' name='name' data-constraints='@Required')
+													label.form-label(for='form-name') Name
+													.icon.form-icon.mdi.mdi-account-outline.text-primary
+											.col-md-6
+												.form-wrap.form-wrap-icon
+													input#form-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+													label.form-label(for='form-email') E-mail
+													.icon.form-icon.mdi.mdi-email-outline.text-primary
+											.col-12
+												.form-wrap.form-wrap-icon
+													label.form-label(for='form-review') Review
+													textarea#form-review.form-input(name='review' data-constraints='@Required')
+													.icon.form-icon.mdi.mdi-message-outline.text-primary
+										.form-wrap.form-wrap-button
+											button.button.button-lg.button-primary(type='submit') Send
+							.col-lg-4
+								+box-4
+
+
+
+
+	// Page Footer
+	include ../sections/_footer-classic-2

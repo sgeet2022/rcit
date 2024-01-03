@@ -1,0 +1,116 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Typography'
+
+block page 
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit. 
+	
+	// Base typography 
+	section.section.section-md.section-first.bg-default
+		.container
+			.row.row-50.layout-1.flex-lg-row-reverse
+				.col-lg-4.layout-1-aside: .layout-1-aside-inner
+					ul.list-xl
+						li 
+							p.heading-7 Fonts
+							ul.list-md
+								li.heading-2.font-family-cursive Baloo
+								li.heading-3 Montserrat
+						li
+							p.heading-7 Colors 
+							ul.list-palette
+								li.bg-primary
+								li.bg-secondary
+								li.bg-tertiary
+								li.bg-default
+								li.bg-black
+								li.bg-gray-300
+								li.bg-gray-100 
+								li.bg-gray-800
+								li.bg-gray-500
+					
+				.col-lg-8.layout-1-main
+					ul.list-xl
+						li
+							h1 H1 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+
+						li
+							h2 H2 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+
+						li
+							h3 H3 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+
+						li
+							h4 H4 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+
+						li
+							h5 H5 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+						li
+							h6 H6 Heading
+							p Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+
+	// HTML Text Elements
+	section.section.section-md.bg-default
+		.container
+			.row
+				.col-lg-10.col-xl-11
+					h3 HTML Text Elements
+					p.text-block
+						span.text-bold Bold text
+						mark This is a highlighted text
+						span.text-strike This is a strickethrough text
+						span.text-underline This is an underlined text.
+						span Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for
+						a(href='#') Link
+						a(href='#').link-hover Hover link
+						a(href='#').link-active Press link
+						span With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.
+						span.tooltip-custom(data-bs-toggle='tooltip' data-bs-placement='top' title='Tooltip') Tooltip
+						
+	// Ordered & Unordered List
+	section.section.section-md.bg-default
+		.container
+			h3 Ordered & Unordered List
+			.row.row-50
+				.col-sm-6.col-lg-5.col-xl-4
+					ul.list-marked
+						li Consulting
+						li Customer Service
+						li Innovation
+						li Management
+						li Ethics
+				.col-sm-6.col-lg-5.col-xl-4
+					ol.list-ordered
+						li Consulting
+						li Customer Service
+						li Innovation
+						li Management
+						li Ethics
+
+	// Blockquote
+	section.section.section-md.section-last.bg-default
+		.container
+			.row.row-50
+				.col-lg-10.col-xl-9
+					h3 Blockquote
+					// Quote Primary
+					blockquote.quote-primary
+						.quote-primary-text: p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. 
+						.quote-primary-footer
+							+svg-wave-line.quote-primary-line(role='presentation')
+							p.heading-5.quote-primary-cite Jane Smith
+
+	// Page Footer
+	include ../sections/_footer-classic-2

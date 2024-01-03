@@ -1,0 +1,43 @@
+extends  ../_skeleton
+
+block variables
+  - var activeCategory = 'pages'
+  - var pageName = 'Contact Us'
+
+block page
+  // Page Header
+  +header-classic({
+    title: pageName,
+    bgImage: 'bg-image-4'
+  })
+    p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.  
+    
+  // Addresses
+  section.section.section-md.bg-gray-100 
+    .container
+      .row.row-30
+        .col-sm-6.col-lg-4
+          // Box 1
+          address.box-1
+            p.heading-4.box-1-title United States
+            p.box-1-address.heading-5 9 Valley St. Brooklyn, NY 11203
+            p.box-1-tel.heading-3: a(href='tel:#') 1-800-346-6277
+        .col-sm-6.col-lg-4
+          // Box 1
+          address.box-1
+            p.heading-4.box-1-title Canada
+            p.box-1-address.heading-5 500 Kingston Rd Toronto ON M4L 1V3
+            p.box-1-tel.heading-3: a(href='tel:#') 1-780-964-1989
+        .col-sm-6.col-lg-4
+          // Box 1
+          address.box-1
+            p.heading-4.box-1-title Australia
+            p.box-1-address.heading-5 60 Marcus Clarke St, Canberra, ACT 2601
+            p.box-1-tel.heading-3: a(href='tel:#') 61-02-6156-0706
+          
+    
+  include ../sections/_section-contact-form
+     
+          
+  // Page Footer
+  include ../sections/_footer-classic-2

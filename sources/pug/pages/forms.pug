@@ -1,0 +1,133 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Forms'
+
+block page
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+
+	// Forms
+	section.section.section-lg.bg-default
+		.container
+			.row.row-50.justify-content-center.justify-content-xl-between
+				.col-md-10.col-lg-6.col-xl-5
+					h3 Login Form
+					// RD Mailform
+					form.rd-form.rd-mailform
+						.form-wrap.form-wrap-icon
+							input#login-name.form-input(type='text' name='name' data-constraints='@Required')
+							label.form-label(for='login-name') Name
+							.icon.form-icon.mdi.mdi-account-outline
+						.form-wrap.form-wrap-icon
+							input#login-password.form-input(type='password' name='password' data-constraints='@Required')
+							label.form-label(for='login-password') Password
+							.icon.form-icon.mdi.mdi-key
+						.form-wrap.form-wrap-checkbox
+							label.checkbox-inline.checkbox-modern
+								input(name='checkbox-1' value='checkbox-1' type='checkbox')
+								| Remember me
+						.form-wrap.form-wrap-group.group-1
+							button.button.button-lg.button-primary(type='submit') Log In
+							button.button.button-lg.button-default-outline Create an Account
+
+				.col-md-10.col-lg-6.col-xl-5
+					h3 Register Form
+					// RD Mailform
+					form.rd-form.rd-mailform
+						.form-wrap.form-wrap-icon
+							input#register-name.form-input(type='text' name='name' data-constraints='@Required')
+							label.form-label(for='register-name') Name
+							.icon.form-icon.mdi.mdi-account-outline
+						.form-wrap.form-wrap-icon
+							input#register-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+							label.form-label(for='register-email') E-mail
+							.icon.form-icon.mdi.mdi-email-outline
+						.form-wrap.form-wrap-icon
+							input#register-password.form-input(type='password' name='password' data-constraints='@Required')
+							label.form-label(for='register-password') Password
+							.icon.form-icon.mdi.mdi-key
+						.form-wrap.form-wrap-group.group-1.group-middle
+							button.button.button-lg.button-primary(type='submit') Sign Up
+							p.fst-italicor
+							div: .group-sm
+								a.link-1.link-1-social.icon.mdi.mdi-facebook(href='#')
+								a.link-1.link-1-social.icon.mdi.mdi-google(href='#')
+								a.link-1.link-1-social.icon.mdi.mdi-twitter(href='#')
+
+	// Join Our Newsletter
+	section.section.section-xl.context-dark.bg-image.bg-overlay-1.text-center(style='background-image: url(images/bg-image-3.jpg);')
+		.container
+			h2: span(data-bs-toggle='modal' data-bs-target='#forms-modal-tip') Join Our Newsletter #[span.tip-mark ?]
+			h4.mt-md-20.mt-lg-40 Subscribe to our newsletter to receive the latest news & updates.
+			.block-2.block-centered.mt-30.mt-lg-60
+				form.rd-form.rd-mailform.form-inline.form-lg(
+				data-form-output='form-output-global'
+				data-form-type='subscribe'
+				method='post'
+				action='bat/rd-mailform.php')
+					.form-wrap.form-wrap-icon
+						input.form-input(id='subscribe-form-email' type='email' name='email' data-constraints='@Email @Required')
+						label.form-label(for='subscribe-form-email') E-mail
+						.icon.form-icon.form-icon-2.mdi.mdi-email-outline
+					.form-button
+						button.button.button-lg.button-primary(type='submit') Send
+
+	include ../sections/_section-contact-form
+
+	// Get in Touch (with reCAPTCHA)
+	section.section.section-lg.bg-default
+		.container
+			h3 Get in Touch (with reCAPTCHA)
+			// RD Mailform
+			form.rd-form.rd-mailform.form-lg(
+			data-form-output='form-output-global'
+			data-form-type='contact'
+			method='post'
+			action='bat/rd-mailform.php')
+				.row.row-30
+					.col-lg-4
+						.form-wrap.form-wrap-icon
+							input#contact-2-name.form-input(type='text' name='name' data-constraints='@Required')
+							label.form-label(for='contact-2-name') Name
+							.icon.form-icon.mdi.mdi-account-outline.text-primary
+					.col-lg-4
+						.form-wrap.form-wrap-icon
+							input#contact-2-phone.form-input(type='text' name='phone' data-constraints='@PhoneNumber')
+							label.form-label(for='contact-2-phone') Phone
+							.icon.form-icon.mdi.mdi-phone.text-primary
+					.col-lg-4
+						.form-wrap.form-wrap-icon
+							input#contact-2-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+							label.form-label(for='contact-2-email') E-mail
+							.icon.form-icon.mdi.mdi-email-outline.text-primary
+					.col-12
+						.form-wrap.form-wrap-icon
+							label.form-label(for='contact-2-message') Message
+							textarea#contact-2-message.form-input(name='message' data-constraints='@Required')
+							.icon.form-icon.mdi.mdi-message-outline.text-primary
+				.form-wrap.form-validation-left.form-wrap-group: .group.group-lg.group-middle
+					// Google captcha
+					.recaptcha#captcha1(data-sitekey='6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt')
+					button.button.button-lg.button-primary(type='submit') Send
+
+
+	// Page Footer
+	include ../sections/_footer-classic-2
+
+	.modal.fade#forms-modal-tip
+		.modal-dialog(role='document'): .modal-inner
+			.modal-content
+				.modal-header
+					h6 Subscribe form tip
+					button.btn-close(type='button', data-bs-dismiss='modal', aria-label='Close'): span(aria-hidden='true')
+				.modal-body
+					p Subscribe form works as an e-mail newsletter.
+					p To activate such form with an enabled #[strong MailChimp] service, replace the #[code .rd-mailform] class with #[code .mailchimp-mailform] and the form's action with MailChimp subscription URL.
+					p To activate the #[strong Campaign Monitor] service, you need to replace the form’s #[code .rd-mailform] class with #[code .campaign-mailform] and copy the form's action and the name of the input field from the form generated by Campaign Monitor service.

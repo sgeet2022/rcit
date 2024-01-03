@@ -1,0 +1,22 @@
+mixin tour-3(obj)
+  // Tour 3
+  article.tour-3.bg-image.context-dark(
+  style='background-image: url(images/' + obj.img + '.jpg);'
+  )&attributes(attributes)
+    .tour-3-inner
+      .tour-3-header
+        p.tour-3-note=obj.note
+        .tour-3-pricing
+          if(obj.priceOld)
+            p.tour-3-price.tour-3-price-old=obj.priceOld
+          p.tour-3-price.tour-3-price-new=obj.price            
+            
+      .tour-3-main
+        h3.tour-3-title: a(href=obj.link ? obj.link : 'single-tour.html')=obj.title
+        ul.tour-3-meta
+          each item in obj.meta
+            li
+              span.icon(class=item.icon)
+              span=item.text
+        
+        

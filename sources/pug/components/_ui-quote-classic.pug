@@ -1,0 +1,12 @@
+mixin quote-classic(obj)
+  // Quote Classic
+  blockquote.quote-classic&attributes(attributes): .quote-classic-inner
+    .quote-classic-header
+      .quote-classic-profile
+        +jpg(obj.avatar).quote-classic-avatar
+        cite.quote-classic-cite.heading-5=obj.cite
+      .quote-classic-links
+        a.quote-classic-social-link.mdi.mdi-facebook(href='#')
+    .quote-classic-text
+      block
+    time.quote-classic-time(datetime='2021') Mar 21, 2021

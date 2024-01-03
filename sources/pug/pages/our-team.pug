@@ -1,0 +1,95 @@
+extends  ../_skeleton
+
+block variables
+	- var activeCategory = 'pages'
+	- var pageName = 'Our Team'
+
+block page
+	// Page Header
+	+header-classic({
+		title: pageName,
+		bgImage: 'bg-image-4'
+	})
+		p.big Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.
+
+	// Addresses
+	section.section.section-lg.bg-gray-100
+		.container
+			.row.row-50.justify-content-center
+				.col-md-10.col-lg-7.col-xl-6
+					.row.row-30
+						.col-sm-6
+							// Profile Classic
+							article.profile-classic
+								+jpg('our-team-1-272x197').profile-classic-image
+								.profile-classic-main
+									p.heading-5.profile-classic-position Spanish Teacher
+									p.profile-classic-name.heading-4 Amanda Peterson
+									.profile-classic-unit
+										.icon.mdi.mdi-phone
+										a.heading-6(href='tel:#') 1-800-366-77-89
+						.col-sm-6
+							// Profile Classic
+							article.profile-classic
+								+jpg('our-team-2-272x197').profile-classic-image
+								.profile-classic-main
+									p.heading-5.profile-classic-position English Teacher
+									p.profile-classic-name.heading-4 Sam Johnson
+									.profile-classic-unit
+										.icon.mdi.mdi-phone
+										a.heading-6(href='tel:#') 1-800-366-77-89
+						.col-sm-6
+							// Profile Classic
+							article.profile-classic
+								+jpg('our-team-3-272x197').profile-classic-image
+								.profile-classic-main
+									p.heading-5.profile-classic-position German Teacher
+									p.profile-classic-name.heading-4 Pamela Reed
+									.profile-classic-unit
+										.icon.mdi.mdi-phone
+										a.heading-6(href='tel:#') 1-800-366-77-89
+						.col-sm-6
+							// Profile Classic
+							article.profile-classic
+								+jpg('our-team-4-272x197').profile-classic-image
+								.profile-classic-main
+									p.heading-5.profile-classic-position French Teacher
+									p.profile-classic-name.heading-4 Elizabeth Smith
+									.profile-classic-unit
+										.icon.mdi.mdi-phone
+										a.heading-6(href='tel:#') 1-800-366-77-89
+
+				.col-md-10.col-lg-5.col-xl-6
+					// Box 2
+					article.box-2: .box-2-inner
+						h4 Get in Touch
+						// RD Mailform
+						form.rd-form.rd-mailform.form-lg(
+						data-form-output='form-output-global'
+						data-form-type='contact'
+						method='post'
+						action='bat/rd-mailform.php')
+							.form-wrap.form-wrap-icon
+								input#contact-name.form-input(type='text' name='name' data-constraints='@Required')
+								label.form-label(for='contact-name') Full Name
+								.icon.form-icon.mdi.mdi-account-outline
+							.form-wrap.form-wrap-icon
+								input#contact-email.form-input(type='email' name='email' data-constraints='@Email @Required')
+								label.form-label(for='contact-email') E-mail
+								.icon.form-icon.mdi.mdi-email-outline
+							.form-wrap.form-wrap-icon
+								input#contact-phone.form-input(type='text' name='phone' data-constraints='@PhoneNumber')
+								label.form-label(for='contact-phone') Phone
+								.icon.form-icon.mdi.mdi-phone
+							.form-wrap.form-wrap-icon
+								label.form-label(for='contact-message') Message
+								textarea#contact-message.form-input(name='message' data-constraints='@Required')
+								.icon.form-icon.mdi.mdi-message-outline
+							.form-wrap.form-wrap-button.text-center
+								button.button.button-lg.button-primary(type='submit') Send Message
+
+
+
+
+	// Page Footer
+	include ../sections/_footer-classic-2
