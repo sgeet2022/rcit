@@ -916,7 +916,7 @@ a.box-3-play:hover::after {
 .box-4 {
 	padding: 25px 20px;
 	border-radius: 4px 4px 0 0;
-	background: #ff6100 ;
+	background: #ffa066 ;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 	text-align: left;
 }
@@ -2538,15 +2538,15 @@ hr {
 }
 
 .btn-cp1{
-	background-color: #20de63;
+	background-color: #139e24;
 	color: white;
 	border-radius:80px;
 	padding: 80x;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 50px;
+	padding-right: 50px;
 	align-items: center;
 	font-size: 20px;
-	border: #20de63;
+	border: #139e24;
 }
 
 
