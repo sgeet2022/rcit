@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6, [class*='heading-'] {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: 500;
-	color: #000000;
+	color: #000;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, [class*='heading-'] a {
@@ -916,7 +916,7 @@ a.box-3-play:hover::after {
 .box-4 {
 	padding: 25px 20px;
 	border-radius: 4px 4px 0 0;
-	background: #ffffff;
+	background: #ff6100 ;
 	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 	text-align: left;
 }
@@ -2525,6 +2525,30 @@ hr {
 	display: block;
 	width: 100%;
 }
+
+.btn-cp{
+	background-color: #000;
+	color: white;
+	border-radius:80px;
+	padding: 80x;
+	padding-left: 50px;
+	padding-right: 50px;
+	align-items: center;
+	font-size: 20px;
+}
+
+.btn-cp1{
+	background-color: #20de63;
+	color: white;
+	border-radius:80px;
+	padding: 80x;
+	padding-left: 40px;
+	padding-right: 40px;
+	align-items: center;
+	font-size: 20px;
+	border: #20de63;
+}
+
 
 .button-default, .button-default:focus {
 	color: #c4c4c4;
