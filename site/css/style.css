@@ -43,6 +43,7 @@ p {
 	margin: 0;
 }
 
+
 ul,
 ol {
 	list-style: none;
@@ -11190,7 +11191,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .context-dark .rd-navbar-classic.rd-navbar-fixed .rd-navbar-panel {
-	background: #353535;
+	background: #ffa066;
 	border-bottom-color: #222;
 }
 
@@ -11327,7 +11328,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	margin-top: 1px;
 	right: 0;
 	padding: 10px;
-	background: #79dfff;
+	background: #ffa066;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12782,7 +12783,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .tabs-complex .tab-content {
-	background: #f6f6f6;
+	background: #fff;
 }
 
 .tabs-complex .tab-pane {
