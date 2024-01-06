@@ -478,11 +478,11 @@ a, a:focus, a:active, a:hover {
 }
 
 a, a:focus, a:active {
-	color: #1cde60;
+	color: #000;
 }
 
 a:hover {
-	color: #139a43;
+	color: lightgray;
 }
 
 a[href*='tel'], a[href*='callto'], a[href*='mailto'] {
