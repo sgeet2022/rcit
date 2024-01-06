@@ -2562,8 +2562,8 @@ hr {
 
 .button-default:hover, .button-default:active {
 	color: #ffffff;
-	background-color: #1cde60;
-	border-color: #1cde60;
+	background-color: #ffa066;
+	border-color: #ffa066;
 }
 
 .button-default.button-ujarak::before {
@@ -2572,8 +2572,8 @@ hr {
 
 .button-primary, .button-primary:focus {
 	color: #ffffff;
-	background-color: #1cde60;
-	border-color: #1cde60;
+	background-color: #ffa066;
+	border-color: #ffa066;
 }
 
 .button-primary:hover, .button-primary:active {
@@ -2614,8 +2614,8 @@ hr {
 
 .button-style-1:hover, .button-style-1:active {
 	color: #ffffff;
-	background-color: #1cde60;
-	border-color: #1cde60;
+	background-color: #ffa066;
+	border-color: #ffa066;
 }
 
 .button-style-1.button-ujarak::before {
@@ -9207,6 +9207,9 @@ html [class*='section-'].section-bottom-0 {
 	background-color: #f6f6f6;
 }
 
+.bg-gray-1{
+	background-color: #f6f6f6;
+}
 .bg-gray-100:not([style*="background-"]) + .bg-gray-100:not([style*="background-"]) {
 	padding-top: 0;
 }
@@ -11488,7 +11491,7 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	padding-left: 40px;
 	padding-right: 20px;
 	margin-top: 1px;
-	background: #79dfff;
+	background: #ffa066;
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity .5s, visibility .5s, transform .5s;
