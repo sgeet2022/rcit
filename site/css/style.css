@@ -925,6 +925,10 @@ a.box-3-play:hover::after {
 	text-align: left;
 }
 
+.box-cp{
+	background-color: lightgray;
+}
+
 .box-4-toggle {
 	background: none;
 	border: none;
@@ -2534,25 +2538,38 @@ hr {
 	background-color: #000;
 	color: white;
 	border-radius:80px;
-	padding: 80x;
-	padding-left: 50px;
-	padding-right: 50px;
-	align-items: center;
 	font-size: 20px;
+	text-align: center;
+	border: #000;
+	
 }
 
 .btn-cp1{
 	background-color: #139e24;
 	color: white;
 	border-radius:80px;
-	padding: 80x;
+	padding-top: 8px;
 	padding-left: 50px;
 	padding-right: 50px;
+	padding-bottom: 10px;
 	align-items: center;
 	font-size: 20px;
 	border: #139e24;
 }
+.btn-cp2{
+	background-color: #139e24;
+	color: white;
+	padding-top: 8px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	border-radius:80px;
+	align-items: center;
+	font-size: 20px;
+	border: #139e24;
 
+	
+}
 
 .button-default, .button-default:focus {
 	color: #c4c4c4;
@@ -9207,10 +9224,7 @@ html [class*='section-'].section-bottom-0 {
 	background-color: #f6f6f6;
 }
 
-.bg-gray-1{
-	background-color: #f6f6f6;
-}
-.bg-gray-100:not([style*="background-"]) + .bg-gray-100:not([style*="background-"]) {
+gray-100:not([style*="background-"]) + .bg-gray-100:not([style*="background-"]) {
 	padding-top: 0;
 }
 
