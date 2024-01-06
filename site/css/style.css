@@ -2582,6 +2582,23 @@ hr {
 	border-color: #79dfff;
 }
 
+.button-primary1:hover, .button-primary1:active {
+	color: #ffffff;
+	background-color: #79dfff;
+	border-color: #ffa066;
+}
+
+.button-primary1.button-ujarak::before {
+	background: #79dfff;
+}
+
+.button-primary1, .button-primary1:focus {
+	color: #ffffff;
+	background-color: black;
+	border-color: #ffa066;
+}
+
+
 .button-primary.button-ujarak::before {
 	background: #79dfff;
 }
@@ -2662,8 +2679,10 @@ hr {
 
 .button-lg {
 	padding: 17px 30px;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1.5;
+	border-radius: 10px;
+	transition: .35s;
 }
 
 @media (min-width: 768px) {
