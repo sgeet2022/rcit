@@ -353,9 +353,15 @@
                             <div class="icon form-icon mdi mdi-city"></div>
                           </div>
                           <div class="form-wrap form-wrap-icon">
-                            <input class="form-input" id="form-3-Location" type="text" name="Locations" data-constraints="@Location"/>
-                            <label class="form-label" for="form-3-Location">Location</label>
-                            <div class="icon form-icon mdi mdi-map-marker"></div>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Location">
+                            <datalist id="datalistOptions">
+                              <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                               <option value="Los Angeles">
+                               <option value="Chicago">
+                              </datalist>
+                            
                           </div>
                           <div class="form-wrap form-wrap-icon">
                             <input class="form-input" id="form-3-Package" type="number" name="Package" data-constraints="@Package"/>
