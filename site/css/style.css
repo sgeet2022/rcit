@@ -920,8 +920,8 @@ a.box-3-play:hover::after {
 .box-4 {
 	padding: 25px 20px;
 	border-radius: 4px 4px 0 0;
-	background: rgba(59, 55, 55, 0.15) ;
-	box-shadow: 0 0 4px rgba(41, 39, 39, 0.15);
+	background: #ffa066 ;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 	text-align: left;
 }
 
@@ -2602,7 +2602,7 @@ hr {
 .button-primary1:hover, .button-primary1:active {
 	color: #ffffff;
 	background-color: #79dfff;
-	border-color: rgba(41, 39, 39, 0.15);
+	border-color: #ffa066;
 }
 
 .button-primary1.button-ujarak::before {
@@ -2611,8 +2611,8 @@ hr {
 
 .button-primary1, .button-primary1:focus {
 	color: #ffffff;
-	background-color: red;
-	border-color: rgba(41, 39, 39, 0.15);
+	background-color: black;
+	border-color: #ffa066;
 }
 
 
