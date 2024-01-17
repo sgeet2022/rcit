@@ -11231,12 +11231,12 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .context-dark .rd-navbar-classic.rd-navbar-static .rd-navbar-main-outer::after {
-	background: #353535;
+	background: #ffa066;
 }
 
 .context-dark .rd-navbar-classic.rd-navbar-static.rd-navbar--is-clone .rd-navbar-main-outer, .context-dark .rd-navbar-classic.rd-navbar-static.rd-navbar--is-stuck .rd-navbar-main-outer {
 	background: #ffa066;
-	border-bottom-color: #222;
+	border-bottom-color: #ffa066;
 }
 
 .context-dark .rd-navbar-classic.rd-navbar-fixed .rd-navbar-panel {
