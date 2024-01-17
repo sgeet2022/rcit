@@ -12813,8 +12813,8 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 	font-size: 13px;
 	text-transform: uppercase;
 	letter-spacing: .05em;
-	background: #ffffff;
-	color: #808080;
+	background: #ffa066;
+	color: #000;
 }
 
 .tabs-complex .nav-link span {
@@ -12827,8 +12827,8 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 }
 
 .tabs-complex .nav-link.active {
-	color: #000000;
-	background: #f6f6f6;
+	color: #000;
+	background: #ffffff;
 }
 
 .tabs-complex .tab-content {
