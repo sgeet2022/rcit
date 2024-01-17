@@ -233,7 +233,7 @@
           <button class="tabs-complex-nav-toggle" data-multitoggle="#tabs-complex-nav" data-isolate="#tabs-complex-nav"><span>Navigation</span><span class="icon mdi mdi-chevron-down"></span></button>
           <!-- Nav tabs-->
           <ul class="nav nav-tabs" id="tabs-complex-nav">
-            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-bs-toggle="tab"><span class="">Information</span></a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link active" href="#tabs-1-1" data-bs-toggle="tab"><span class="fw-medium">Information</span></a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-2" data-bs-toggle="tab"><span class="fw-medium">Course plan</span></a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-3" data-bs-toggle="tab"><span class="fw-medium ">How To Book</span></a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" href="#tabs-1-4" data-bs-toggle="tab"><span class="fw-medium">Payment Method</span></a></li>
@@ -352,23 +352,23 @@
                           </div>
                           <div class="form-wrap form-wrap-icon">
                             <input class="form-input" id="form-3-city" type="text" name="city" data-constraints="@city"/>
-                            <label class="form-label" for="form-3-city">city</label>
+                            <label class="form-label" for="form-3-city">Country, city</label>
                             <div class="icon form-icon mdi mdi-city"></div>
                           </div>
                           <div class="form-wrap form-wrap-icon">
-                            <input class="form-control py-3 ps-5 " list="datalistOptions" id="exampleDataList" placeholder="Location" data-constraints="@city">
+                            <input class="form-control py-3 ps-5 " list="datalistOptions" id="exampleDataList" placeholder="Choose Interaction" data-constraints="@city">
                             <datalist id="datalistOptions">
-                              <option value="San Francisco">
-                                <option value="New York">
-                                <option value="Seattle">
-                               <option value="Los Angeles">
-                               <option value="Chicago">
-                              </datalist>
-                            
+                              <option value="One-One">
+                                <option value="Group">
+                              </datalist>                           
                           </div>
                           <div class="form-wrap form-wrap-icon">
                             <input class="form-input" id="form-3-Package" type="number" name="Package" data-constraints="@Package"/>
-                            <label class="form-label" for="form-3-Package">Package</label>
+                            <label class="form-label" for="form-3-Package"> Choose Package</label>
+                            <datalist id="datalistOptions">
+                              <option value="One-One">
+                                <option value="Group">
+                              </datalist>
                             <div class="icon form-icon mdi mdi mdi-package"></div>
                           </div>
                           <div class="form-wrap mt-xl-55 text-center">
