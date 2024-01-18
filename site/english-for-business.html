@@ -341,8 +341,8 @@
                             <div class="icon form-icon mdi mdi-border-color"></div>
                           </div>
                           <div class="form-wrap form-wrap-icon">
-                            <label class="form-label form-label-outside" for="form-3-date">Date</label>
-                            <input class="form-input" id="form-3-date" type="text" name="date" data-constraints="@Required" data-time-picker="date"/>
+                            <label class="form-label form-label-outside" for="form-3-date"></label>
+                            <input class="form-input" id="form-3-date" type="date" name="date" data-constraints="@Required" data-time-picker="date"/>
                             <div class="icon form-icon mdi mdi-calendar-text"></div>
                           </div>
                           <div class="form-wrap form-wrap-icon">
@@ -350,27 +350,36 @@
                             <input class="form-input" id="form-3-email" type="email" name="email" data-constraints="@Email @Required"/>
                             <div class="icon form-icon mdi mdi-email-outline"></div>
                           </div>
+
                           <div class="form-wrap form-wrap-icon">
                             <input class="form-input" id="form-3-city" type="text" name="city" data-constraints="@city"/>
                             <label class="form-label" for="form-3-city">Country, city</label>
                             <div class="icon form-icon mdi mdi-city"></div>
                           </div>
+
                           <div class="form-wrap form-wrap-icon">
-                            <input class="form-control py-3 ps-5 " list="datalistOptions" id="exampleDataList" placeholder="Choose Interaction" data-constraints="@city">
-                            <datalist id="datalistOptions">
-                              <option value="One-One">
-                                <option value="Group">
-                              </datalist>                           
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="form-input" id="form-3-Package" type="number" name="Package" data-constraints="@Package"/>
-                            <label class="form-label" for="form-3-Package"> Choose Package</label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
+                            <label class="form-label" for="form-3-city"></label>
+                            <div class="icon form-icon mdi mdi-city"></div>
                             <datalist id="datalistOptions">
                               <option value="One-One">
                                 <option value="Group">
                               </datalist>
-                            <div class="icon form-icon mdi mdi mdi-package"></div>
                           </div>
+                        
+                          <div class="form-wrap form-wrap-icon">
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
+                            <label class="form-label" for="form-3-city"></label>
+                            <div class="icon form-icon mdi mdi-city"></div>
+                            <datalist id="datalistOptions">
+                              <option value="One-One">
+                                <option value="Group">
+                              </datalist>
+                          </div>
+
+
+
+
                           <div class="form-wrap mt-xl-55 text-center">
                             <button class="button1 w-50 button-lg  button-primary1" type="submit"> <b>Request</b></button>
                           </div>
@@ -393,7 +402,7 @@
                        <p style="color: #000; font-size: 20px;"> Can be paid using Payment links upon request.</p>
                     </div>    
                 </div>
-                <div class="mt-5 align-item-center justify-content-md-between">
+                <div class="mt-5 text-center justify-content-md-between">
                   <img src="images/payment methods (2).jpg"></img>
                 </div> 
               </div>
@@ -413,7 +422,7 @@
                       <p>If you completely cancel classes and inform the teacher less than 24 hours of your scheduled class time, only 50% of what was paid for that scheduled lesson will be refunded to you.</p>
                       </div>    
                 </div>
-                <div class="mt-5 align-item-center justify-content-md-between">
+                <div class="mt-5 text-center justify-content-md-between">
                   <img src="images/cancellation policy.jpg"></img>
                 </div> 
               </div>
@@ -775,6 +784,7 @@
                   <ul class="list-inline list-inline-md">
                     <li><a class="link-2 icon mdi mdi-instagram" href="https://www.instagram.com/merizo24"></a></li>
                     <li><a class="link-2 icon mdi mdi-facebook" href="https://www.facebook.com/profile.php?id=61555749926566"></a></li>                   
+                    <li><a class="link-2 icon mdi mdi-email" href="mailto:contact@merizo.co.uk"></a></li>
                   </ul>
                 </div>
               </div>
