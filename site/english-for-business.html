@@ -41,7 +41,7 @@
       <!-- Page Header-->
       <header class="section page-header page-header-1 context-dark">
         <div class="page-header-1-figure m-parallax">
-          <div class="page-header-1-image m-parallax-image" style="background-image: url(images/language\ banner.jpg);"></div>
+          <div class="page-header-1-image m-parallax-image" style="background-image: url('images/language banner.jpg');"></div>
         </div>
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
@@ -360,20 +360,32 @@
                           <div class="form-wrap form-wrap-icon">
                             <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
                             <label class="form-label" for="form-3-city"></label>
-                            <div class="icon form-icon mdi mdi-city"></div>
+                            <div class="icon form-icon mdi mdi-gesture-tap"></div>
                             <datalist id="datalistOptions">
                               <option value="One-One">
                                 <option value="Group">
                               </datalist>
                           </div>
+
+                          <div class="form-wrap form-wrap-icon">
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Package" id="exampleDataList" data-constraints="@city">
+                            <label class="form-label" for="form-3-city"></label>
+                            <div class="icon form-icon mdi mdi-package"></div>
+                            <datalist id="datalistOptions">
+                              <option value="30-60 Mins">
+                                <option value="60-90 Mins">
+                              </datalist>
+                          </div>
+
                         
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Location" id="exampleDataList" data-constraints="@city">
                             <label class="form-label" for="form-3-city"></label>
-                            <div class="icon form-icon mdi mdi-city"></div>
+                            <div class="icon form-icon mdi mdi-map-marker-radius"></div>
                             <datalist id="datalistOptions">
-                              <option value="One-One">
-                                <option value="Group">
+                              <option value="Outdoors">
+                                <option value="Indoor">
+                                <option value="Remotely"></option>
                               </datalist>
                           </div>
 
