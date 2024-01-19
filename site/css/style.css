@@ -2262,6 +2262,8 @@ img {
 	font-style: normal;
 	speak: none;
 	text-transform: none;
+	color: orange;
+	padding-left: 12px;
 }
 
 .icon-circle {
@@ -5412,7 +5414,7 @@ button.quote-light-avatar.active {
 	flex-direction: column;
 	justify-content: space-around;
 	width: 100%;
-	min-height: 25.52083vw;
+	min-height: 30vw;
 	padding: 35px 0 40px;
 }
 

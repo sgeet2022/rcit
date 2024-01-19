@@ -41,7 +41,7 @@
       <!-- Page Header-->
       <header class="section page-header page-header-1 context-dark">
         <div class="page-header-1-figure m-parallax">
-          <div class="page-header-1-image m-parallax-image" style="background-image: url('images/article-writing.jpg');">
+          <div class="page-header-1-image m-parallax-image d-flex justify-content-center align-items-center" style="background-image: url('images/article-writing.jpg');">
             <section class="breadcrumbs-custom">
               <div class="breadcrumbs-custom-inner">
                 <div class="container mt-5 bg-black">
@@ -86,51 +86,6 @@
                     </li>
 
                     <li class="rd-nav-item"><a class="rd-nav-link" href="contact-us.html">Contact</a>
-                    </li>
-
-                    <!--
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                      <!-- RD Navbar Megamenu
-                      <ul class="rd-menu rd-navbar-megamenu">
-                        <li class="rd-megamenu-item">
-                          <p class="rd-megamenu-title">Elements</p>
-                          <div class="rd-megamenu-block">
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
-                            </ul>
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icon-lists.html">Icon Lists</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="counters-and-accordions.html">Counters &amp; Accordions</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li class="rd-megamenu-item">
-                          <p class="rd-megamenu-title">Pages</p>
-                          <div class="rd-megamenu-block">
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="our-team.html">Our Team</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="testimonials.html">Testimonials</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="contact-us.html">Contact Us</a></li>
-                            </ul>
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 Page</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                      </ul>
-                    </li>
-                  
-                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">Blog</a>
-                      <!-- RD Navbar Dropdown
-                      <ul class="rd-menu rd-navbar-dropdown">
-                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog post</a></li>
-                      </ul>
-                      -->
                     </li>
                   </ul>
                 </div>
@@ -241,8 +196,8 @@
       
 
             <!--how to book-->
-            <div class="tab-pane fade" id="tabs-1-3">
-              <div class="container text-center">
+            
+              <div class="container text-center py-5">
                 <h2>Please Fill in the details below in order for us to organize<br> get back to you with the confirmation.</h2>
                 <div class="row row-50 justify-content-center">
                   <div class="col-lg-8">
@@ -274,9 +229,9 @@
                           </div>
 
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
-                            <div class="icon form-icon mdi mdi-gesture-tap"></div>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interactio" id="exampleDataList" data-constraints="@Interaction">
+                            <label class="form-label" for="form-3-Interaction">n</label>
+                            <div class="icon form-icon mdi mdi-city"></div>
                             <datalist id="datalistOptions">
                               <option value="One-One">
                                 <option value="Group">
@@ -284,8 +239,8 @@
                           </div>
 
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Package" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Package" id="exampleDataList" data-constraints="@Package">
+                            <label class="form-label" for="form-3-Package"></label>
                             <div class="icon form-icon mdi mdi-package"></div>
                             <datalist id="datalistOptions">
                               <option value="30-60 Mins">
@@ -295,8 +250,8 @@
 
                         
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Location" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Location" id="location" data-constraints="@city">
+                            <label class="form-label" for="form-3-location"></label>
                             <div class="icon form-icon mdi mdi-map-marker-radius"></div>
                             <datalist id="datalistOptions">
                               <option value="Outdoors">
@@ -316,300 +271,9 @@
                   </div>
                 </div>
               </div>
-            </div>
             <!--how to book end-->
 
             
-            <div class="tab-pane fade" id="tabs-1-6">
-              <div class="container">
-                <div class="row row-50">
-                  <div class="col-lg-8">
-                    <div class="inset-1">
-                      <article class="box-5">
-                        <div class="box-5-aside">
-                          <p class="box-5-rating">9,5</p>
-                          <h5 class="box-5-title">Superb</h5>
-                        </div>
-                        <div class="box-5-main">
-                          <ul class="box-5-list">
-                            <li>
-                              <!-- Linear progress bar-->
-                              <article class="progress-linear tab-progress-bar" data-formatter="rating">
-                                <div class="progress-header">
-                                  <p class="progress-title">Content</p>
-                                </div>
-                                <div class="progress-bar-linear-wrap">
-                                  <div class="progress-bar-linear"><span class="progress-value">57</span></div>
-                                </div>
-                              </article>
-                            </li>
-                            <li>
-                              <!-- Linear progress bar-->
-                              <article class="progress-linear tab-progress-bar" data-formatter="rating">
-                                <div class="progress-header">
-                                  <p class="progress-title">Educational Resources</p>
-                                </div>
-                                <div class="progress-bar-linear-wrap">
-                                  <div class="progress-bar-linear"><span class="progress-value">78</span></div>
-                                </div>
-                              </article>
-                            </li>
-                            <li>
-                              <!-- Linear progress bar-->
-                              <article class="progress-linear tab-progress-bar" data-formatter="rating">
-                                <div class="progress-header">
-                                  <p class="progress-title">Received Knowledge</p>
-                                </div>
-                                <div class="progress-bar-linear-wrap">
-                                  <div class="progress-bar-linear"><span class="progress-value">68</span></div>
-                                </div>
-                              </article>
-                            </li>
-                            <li>
-                              <!-- Linear progress bar-->
-                              <article class="progress-linear tab-progress-bar" data-formatter="rating">
-                                <div class="progress-header">
-                                  <p class="progress-title">Results</p>
-                                </div>
-                                <div class="progress-bar-linear-wrap">
-                                  <div class="progress-bar-linear"><span class="progress-value">81</span></div>
-                                </div>
-                              </article>
-                            </li>
-                            <li>
-                              <!-- Linear progress bar-->
-                              <article class="progress-linear tab-progress-bar" data-formatter="rating">
-                                <div class="progress-header">
-                                  <p class="progress-title">Value for Money</p>
-                                </div>
-                                <div class="progress-bar-linear-wrap">
-                                  <div class="progress-bar-linear"><span class="progress-value">72</span></div>
-                                </div>
-                              </article>
-                            </li>
-                          </ul>
-                        </div>
-                      </article>
-                      <div class="comment-review-group">
-                        <article class="comment-review"><img class="comment-review-avatar" src="images/single-tour-15-86x86.jpg" alt="" width="86" height="86"/>
-                          <div class="comment-review-main">
-                            <p class="heading-5 comment-review-name">Jane Smith</p>
-                            <time datetime="2021">October 5, 2021 at 1:44 pm</time>
-                            <div class="comment-review-text">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-                            </div>
-                            <ul class="comment-review-meta review-meta">
-                              <li>
-                                <p>Overall</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Knowledge</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Resources</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Content</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </article>
-                        <article class="comment-review"><img class="comment-review-avatar" src="images/single-tour-16-86x86.jpg" alt="" width="86" height="86"/>
-                          <div class="comment-review-main">
-                            <p class="heading-5 comment-review-name">Peter Wilson</p>
-                            <time datetime="2021">October 5, 2021 at 2:15 pm</time>
-                            <div class="comment-review-text">
-                              <p>Silva, impositio, et eleates. Contencios experimentum, tanquam fatalis zelus. Bromiums cantare, tanquam varius eleates. Competition ires, tanquam bi-color adiurator. Eleates, devatio, et caesium. Zelus velums, tanquam salvus aonides. Bubos sunt eposs de secundus sectam.</p>
-                            </div>
-                            <ul class="comment-review-meta review-meta">
-                              <li>
-                                <p>Overall</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Knowledge</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Resources</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p>Content</p>
-                                <ul class="comment-review-rating review-rating">
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star text-primary"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                  <li class="icon mdi mdi-star"></li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </article>
-                      </div>
-                      <h3 class="mt-40 mt-md-45 mt-xl-70">Write a Review</h3>
-                      <article class="box-6">
-                        <ul class="comment-review-meta review-meta">
-                          <li>
-                            <p>Overall</p>
-                            <ul class="comment-review-rating review-rating">
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star"></li>
-                              <li class="icon mdi mdi-star"></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <p>Knowledge</p>
-                            <ul class="comment-review-rating review-rating">
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star"></li>
-                              <li class="icon mdi mdi-star"></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <p>Resources</p>
-                            <ul class="comment-review-rating review-rating">
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star"></li>
-                              <li class="icon mdi mdi-star"></li>
-                            </ul>
-                          </li>
-                          <li>
-                            <p>Content</p>
-                            <ul class="comment-review-rating review-rating">
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star text-primary"></li>
-                              <li class="icon mdi mdi-star"></li>
-                              <li class="icon mdi mdi-star"></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <!-- RD Mailform-->
-                        <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                          <div class="row row-30">
-                            <div class="col-md-6">
-                              <div class="form-wrap form-wrap-icon">
-                                <input class="form-input" id="form-name" type="text" name="name" data-constraints="@Required">
-                                <label class="form-label" for="form-name">Name</label>
-                                <div class="icon form-icon mdi mdi-account-outline text-primary"></div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="form-wrap form-wrap-icon">
-                                <input class="form-input" id="form-email" type="email" name="email" data-constraints="@Email @Required">
-                                <label class="form-label" for="form-email">E-mail</label>
-                                <div class="icon form-icon mdi mdi-email-outline text-primary"></div>
-                              </div>
-                            </div>
-                            <div class="col-12">
-                              <div class="form-wrap form-wrap-icon">
-                                <label class="form-label" for="form-review">Review</label>
-                                <textarea class="form-input" id="form-review" name="review" data-constraints="@Required"></textarea>
-                                <div class="icon form-icon mdi mdi-message-outline text-primary"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-wrap form-wrap-button">
-                            <button class="button button-lg button-primary" type="submit">Send</button>
-                          </div>
-                        </form>
-                      </article>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4">
-                    <article class="box-4">
-                      <div class="box-4-inner">
-                        <h3>Sign up for a class</h3>
-                        <!-- RD Mailform-->
-                        <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label form-label-outside" for="form-5-title">Full Name</label>
-                            <input class="form-input" id="form-5-title" type="text" name="name" data-constraints="@Required"/>
-                            <div class="icon form-icon mdi mdi-border-color"></div>
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label form-label-outside" for="form-5-date">Date</label>
-                            <input class="form-input" id="form-5-date" type="text" name="date" data-constraints="@Required" data-time-picker="date"/>
-                            <div class="icon form-icon mdi mdi-calendar-text"></div>
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label" for="form-5-email">E-mail</label>
-                            <input class="form-input" id="form-5-email" type="email" name="email" data-constraints="@Email @Required"/>
-                            <div class="icon form-icon mdi mdi-email-outline"></div>
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="form-input" id="form-5-phone" type="text" name="phone" data-constraints="@PhoneNumber"/>
-                            <label class="form-label" for="form-5-phone">Phone</label>
-                            <div class="icon form-icon mdi mdi-phone"></div>
-                          </div>
-                          <div class="form-wrap mt-xl-55">
-                            <button class="button button-lg button-primary button-block" type="submit">send request</button>
-                          </div>
-                        </form>
-                      </div>
-                    </article>
-                  </div>    
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- Page Footer-->
       <footer class="section footer-classic footer-classic-md">
         <div class="footer-classic-main">
