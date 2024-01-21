@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Counters &amp; Accordions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800,900%7CBaloo">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-top">
+          <div class="preloader-top-sun">
+            <div class="preloader-top-sun-bg"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-0"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-45"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-90"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-135"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-180"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-225"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-270"></div>
+            <div class="preloader-top-sun-line preloader-top-sun-line-315"></div>
+          </div>
+        </div>
+        <div class="preloader-bottom">
+          <div class="preloader-bottom-line preloader-bottom-line-lg"></div>
+          <div class="preloader-bottom-line preloader-bottom-line-md"></div>
+          <div class="preloader-bottom-line preloader-bottom-line-sm"></div>
+          <div class="preloader-bottom-line preloader-bottom-line-xs"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header page-header-1 context-dark">
+        <div class="page-header-1-figure m-parallax">
+          <div class="page-header-1-image m-parallax-image" style="background-image: url(images/bg-image-4.jpg);"></div>
+        </div>
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="1px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-110x39.svg" alt="" width="110" height="39"/><img class="brand-logo-light" src="images/logo-inverse-110x39.svg" alt="" width="110" height="39"/></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="our-courses.html">Our Courses</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="english-for-business.html">English For Business</a></li>
+                      </ul>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="#">Pages</a>
+                      <!-- RD Navbar Megamenu-->
+                      <ul class="rd-menu rd-navbar-megamenu">
+                        <li class="rd-megamenu-item">
+                          <p class="rd-megamenu-title">Elements</p>
+                          <div class="rd-megamenu-block">
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
+                            </ul>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="icon-lists.html">Icon Lists</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="counters-and-accordions.html">Counters &amp; Accordions</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li class="rd-megamenu-item">
+                          <p class="rd-megamenu-title">Pages</p>
+                          <div class="rd-megamenu-block">
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="our-team.html">Our Team</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="testimonials.html">Testimonials</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="contact-us.html">Contact Us</a></li>
+                            </ul>
+                            <ul class="rd-megamenu-list">
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404-page.html">404 Page</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="coming-soon.html">Coming Soon</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
+                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="grid-blog.html">Blog</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-menu rd-navbar-dropdown">
+                        <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="blog-post.html">Blog post</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rd-navbar-collapse-outer context-light">
+                  <button class="rd-navbar-collapse-toggle" data-multitoggle="#rd-navbar-collapse, #toggle-inner"><span class="rd-navbar-collapse-toggle-element" id="toggle-inner"><span></span></span><span class="rd-navbar-collapse-toggle-text">Menu</span></button>
+                  <div class="rd-navbar-collapse" id="rd-navbar-collapse">
+                    <button class="rd-navbar-collapse-close" data-multitoggle="#rd-navbar-collapse"><span class="rd-navbar-collapse-toggle-element active"><span></span></span></button>
+                    <h4 class="fw-sbold">Our Office</h4>
+                    <h5 class="ls-1">9 Valley St. Brooklyn, NY 11203</h5>
+                    <h5 class="ls-1"><a href="tel:#">1-800-346-6277</a></h5>
+                    <div class="divider divider-small"></div>
+                    <h4 class="fw-sbold">Our Courses</h4>
+                    <!-- Owl Carousel-->
+                    <div class="owl-carousel owl-carousel-tour-minimal" data-items="1" data-dots="true" data-nav="false" data-auto-width="true" data-loop="true" data-margin="0" data-autoplay="true" data-mouse-drag="false">
+                      <div class="owl-item-inner">
+                        <article class="tour-minimal context-dark">
+                          <div class="tour-minimal-inner img-overlay" style="background-image: url(images/home-3-2-258x273.jpg);">
+                            <div class="tour-minimal-header">
+                            </div>
+                            <div class="tour-minimal-main">
+                              <h3 class="tour-minimal-title fw-sbold"><a href="english-for-business.html">English for Beginners</a></h3>
+                              <div class="tour-minimal-pricing">
+                                <p class="tour-minimal-price tour-minimal-price-new">$25</p>
+                              </div>
+                              <p class="tour-minimal-comment">Price per lesson</p>
+                            </div>
+                            <div class="tour-minimal-caption">
+                              <p>Our best English course for starter level.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="owl-item-inner">
+                        <article class="tour-minimal context-dark">
+                          <div class="tour-minimal-inner img-overlay" style="background-image: url(images/home-3-3-258x273.jpg);">
+                            <div class="tour-minimal-header">
+                            </div>
+                            <div class="tour-minimal-main">
+                              <h3 class="tour-minimal-title fw-sbold"><a href="english-for-business.html">Online Learning</a></h3>
+                              <div class="tour-minimal-pricing">
+                                <p class="tour-minimal-price tour-minimal-price-new">$35</p>
+                              </div>
+                              <p class="tour-minimal-comment">Price per lesson</p>
+                            </div>
+                            <div class="tour-minimal-caption">
+                              <p>Perfect if you prefer distance education.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="owl-item-inner">
+                        <article class="tour-minimal context-dark">
+                          <div class="tour-minimal-inner img-overlay" style="background-image: url(images/home-3-4-258x273.jpg);">
+                            <div class="tour-minimal-header">
+                            </div>
+                            <div class="tour-minimal-main">
+                              <h3 class="tour-minimal-title fw-sbold"><a href="english-for-business.html">English for Business</a></h3>
+                              <div class="tour-minimal-pricing">
+                                <p class="tour-minimal-price tour-minimal-price-new">$40</p>
+                              </div>
+                              <p class="tour-minimal-comment">Price per lesson</p>
+                            </div>
+                            <div class="tour-minimal-caption">
+                              <p>Business English course designed for managers.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                      <div class="owl-item-inner">
+                        <article class="tour-minimal context-dark">
+                          <div class="tour-minimal-inner img-overlay" style="background-image: url(images/home-3-5-258x273.jpg);">
+                            <div class="tour-minimal-header">
+                            </div>
+                            <div class="tour-minimal-main">
+                              <h3 class="tour-minimal-title fw-sbold"><a href="english-for-business.html">English for Kids</a></h3>
+                              <div class="tour-minimal-pricing">
+                                <p class="tour-minimal-price tour-minimal-price-new">$17</p>
+                              </div>
+                              <p class="tour-minimal-comment">Price per lesson</p>
+                            </div>
+                            <div class="tour-minimal-caption">
+                              <p>Easy-to-learn English course for children.</p>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div><a class="button button-default-outline" href="contact-us.html">Get in Touch</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="rd-navbar-placeholder"></div>
+          </nav>
+        </div>
+        <section class="breadcrumbs-custom">
+          <div class="breadcrumbs-custom-inner">
+            <div class="container">
+              <div class="breadcrumbs-custom-main m-parallax-content">
+                <svg class="breadcrumbs-custom-line" width="70" height="8" viewBox="0 0 70 8" fill="none">
+                  <path d="M0 1C5 1 5 7 9.92 7C14.84 7 14.92 1 19.85 1C24.78 1 24.85 7 29.77 7C34.69 7 34.77 1 39.71 1C44.65 1 44.71 7 49.63 7C54.55 7 54.63 1 59.57 1C64.51 1 64.57 7 69.5 7" stroke-width="1.98" stroke-miterlimit="10"></path>
+                </svg>
+                <h2 class="breadcrumbs-custom-title text-uppercase">Counters &amp; Accordions</h2>
+                <p class="big">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- Counters-->
+      <section class="section section-lg section-decoration-1 section-decoration-1-figure bg-gray-100">
+        <div class="container">
+          <h3 class="text-center">Counters</h3>
+          <div class="row row-50">
+            <div class="col-6 col-sm-3">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main"><span>5690</span></div>
+                <h5 class="counter-classic-title">Students</h5>
+              </article>
+            </div>
+            <div class="col-6 col-sm-3">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main"><span>1346</span></div>
+                <h5 class="counter-classic-title">Teachers</h5>
+              </article>
+            </div>
+            <div class="col-6 col-sm-3">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main"><span>10679</span></div>
+                <h5 class="counter-classic-title">Lessons</h5>
+              </article>
+            </div>
+            <div class="col-6 col-sm-3">
+              <!-- Counter Classic-->
+              <article class="counter-classic">
+                <div class="counter-classic-main"><span>678</span><span>+</span></div>
+                <h5 class="counter-classic-title">Positive reviews</h5>
+              </article>
+            </div>
+          </div>
+        </div><img class="section-decoration-1-image" src="images/world-map-728x385.png" alt="" width="728" height="385"/>
+      </section>
+      <!-- Accordions-->
+      <section class="section section-lg bg-default">
+        <div class="container">
+          <h3 class="text-center">Accordion</h3>
+          <!-- Bootstrap collapse-->
+          <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate">
+              <div class="card-header" role="tab">
+                <div class="card-title"><a class="card-link" id="accordion1-card-head-cardluec" data-bs-toggle="collapse" data-parent="#accordion1" href="#accordion1-card-body-swjaxrql" aria-controls="accordion1-card-body-swjaxrql" aria-expanded="true" role="button">Can I track my order?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse show" id="accordion1-card-body-swjaxrql" aria-labelledby="accordion1-card-head-cardluec" data-parent="#accordion1" role="tabpanel">
+                <div class="card-body">
+                  <p>Yes, you can! After placing your order you will receive an order confirmation via email. Each order starts production 15 minutes after your order is placed. Within a few hours of you placing your order, you will receive an expected delivery time. When the order will be ready for delivery, you will receive another email with the tracking number and a link to trace the order online with the courier.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate">
+              <div class="card-header" role="tab">
+                <div class="card-title"><a class="card-link collapsed" id="accordion1-card-head-smmhfeax" data-bs-toggle="collapse" data-parent="#accordion1" href="#accordion1-card-body-hgwpkand" aria-controls="accordion1-card-body-hgwpkand" aria-expanded="false" role="button">How can I change something in my order?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-card-body-hgwpkand" aria-labelledby="accordion1-card-head-smmhfeax" data-parent="#accordion1" role="tabpanel">
+                <div class="card-body">
+                  <p>If you need to change something in your order, please contact us immediately. We usually process orders within 30 minutes, and once we have processed your order, we will be unable to make any changes.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate">
+              <div class="card-header" role="tab">
+                <div class="card-title"><a class="card-link collapsed" id="accordion1-card-head-xwawdoea" data-bs-toggle="collapse" data-parent="#accordion1" href="#accordion1-card-body-ijxsbnex" aria-controls="accordion1-card-body-ijxsbnex" aria-expanded="false" role="button">How can I pay for my order?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-card-body-ijxsbnex" aria-labelledby="accordion1-card-head-xwawdoea" data-parent="#accordion1" role="tabpanel">
+                <div class="card-body">
+                  <p>We accept Visa, MasterCard, and American Express credit and debit cards for your convenience.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate">
+              <div class="card-header" role="tab">
+                <div class="card-title"><a class="card-link collapsed" id="accordion1-card-head-wcsmwywb" data-bs-toggle="collapse" data-parent="#accordion1" href="#accordion1-card-body-mmnntcrp" aria-controls="accordion1-card-body-mmnntcrp" aria-expanded="false" role="button">How long will my order take to be delivered?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-card-body-mmnntcrp" aria-labelledby="accordion1-card-head-wcsmwywb" data-parent="#accordion1" role="tabpanel">
+                <div class="card-body">
+                  <p>Delivery times will depend on your location. Once payment is confirmed your order will be packaged. Delivery can be expected within a day.</p>
+                </div>
+              </div>
+            </article>
+            <!-- Bootstrap card-->
+            <article class="card card-custom card-corporate">
+              <div class="card-header" role="tab">
+                <div class="card-title"><a class="card-link collapsed" id="accordion1-card-head-eaugsrbe" data-bs-toggle="collapse" data-parent="#accordion1" href="#accordion1-card-body-odwvhlwa" aria-controls="accordion1-card-body-odwvhlwa" aria-expanded="false" role="button">Can I return an item?
+                    <div class="card-arrow"></div></a></div>
+              </div>
+              <div class="collapse" id="accordion1-card-body-odwvhlwa" aria-labelledby="accordion1-card-head-eaugsrbe" data-parent="#accordion1" role="tabpanel">
+                <div class="card-body">
+                  <p>Please contact our administrators for more information on returning products purchased on our website.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Page Footer-->
+      <footer class="section footer-classic footer-classic-md">
+        <div class="footer-classic-main">
+          <div class="container">
+            <div class="footer-classic-layout justify-content-sm-around justify-content-md-between divider-4">
+              <div class="footer-classic-layout-item"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default-110x39.svg" alt="" width="110" height="39"/><img class="brand-logo-light" src="images/logo-inverse-110x39.svg" alt="" width="110" height="39"/></a>
+                <div class="footer-classic-item-block footer-classic-item-block-1">
+                  <h6>10000+ Satisfied Students</h6>
+                  <div class="owl-carousel-quote-light">
+                    <!-- Owl Carousel-->
+                    <div class="owl-carousel" data-items="1" data-dots="false" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-nav-custom="#footer-owl-nav" data-animation-in="fadeIn" data-animation-out="fadeOut" data-mouse-drag="false">
+                      <blockquote class="quote-light quote-light-sm">
+                        <div class="icon linearicons-quote-open text-primary icon-md"></div>
+                        <div class="quote-light-main">
+                          <div class="quote-light-text">
+                            <q>The staff here is really supportive, teachers are great, the school has a good structure. Thank you!</q>
+                          </div>
+                          <cite class="quote-light-cite">Jane Smith</cite>
+                        </div>
+                      </blockquote>
+                      <blockquote class="quote-light quote-light-sm">
+                        <div class="icon linearicons-quote-open text-primary icon-md"></div>
+                        <div class="quote-light-main">
+                          <div class="quote-light-text">
+                            <q>I am really enjoying my experience here. Teachers are very friendly and there is a friendly atmosphere.</q>
+                          </div>
+                          <cite class="quote-light-cite">Peter McMillan</cite>
+                        </div>
+                      </blockquote>
+                      <blockquote class="quote-light quote-light-sm">
+                        <div class="icon linearicons-quote-open text-primary icon-md"></div>
+                        <div class="quote-light-main">
+                          <div class="quote-light-text">
+                            <q>I like that it has a busy atmosphere but it’s never stressful. Everyone is very nice and you can ask anything at any time.</q>
+                          </div>
+                          <cite class="quote-light-cite">Kate Wilson</cite>
+                        </div>
+                      </blockquote>
+                    </div>
+                    <div class="owl-nav" id="footer-owl-nav">
+                      <button class="owl-arrow owl-arrow-prev" aria-label="Prev">
+                        <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6.7,15.1c0.4,0.4,1,0.4,1.4,0c0.4-0.4,0.4-1,0-1.4L2.4,8l5.7-5.7c0.4-0.4,0.4-1,0-1.4c-0.4-0.4-1-0.4-1.4,0L0.3,7.3										c-0.4,0.4-0.4,1,0,1.4L6.7,15.1z M20,7H1v2h19V7z"></path>
+                        </svg>
+                      </button>
+                      <div class="owl-nav-divider"></div>
+                      <button class="owl-arrow owl-arrow-next" aria-label="Next">
+                        <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.7071 8.70711C20.0976 8.31658 20.0976 7.68342 19.7071 7.29289L13.3431 0.928932C12.9526 0.538408 12.3195 0.538408 11.9289 0.928932C11.5384 1.31946 11.5384 1.95262 11.9289 2.34315L17.5858 8L11.9289 13.6569C11.5384 14.0474 11.5384 14.6805 11.9289 15.0711C12.3195 15.4616 12.9526 15.4616 13.3431 15.0711L19.7071 8.70711ZM0 9H19V7L0 7L0 9Z"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-classic-layout-item">
+                <h6 class="footer-classic-title inset-3">Popular Courses</h6>
+                <div class="footer-classic-item-block footer-classic-item-block-3">
+                  <ul class="list-pricing">
+                    <li><a href="english-for-business.html"><span class="list-pricing-title">English for Kids</span><span>$45</span></a></li>
+                    <li><a href="english-for-business.html"><span class="list-pricing-title">Online Learning</span><span>$15</span></a></li>
+                    <li><a href="english-for-business.html"><span class="list-pricing-title">German Club</span><span>$36</span></a></li>
+                    <li><a href="english-for-business.html"><span class="list-pricing-title">Personal Lessons</span><span>$21</span></a></li>
+                    <li><a href="english-for-business.html"><span class="list-pricing-title">Group Lessons</span><span>$35</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-classic-layout-item">
+                <h6 class="footer-classic-title inset-3">Get in Touch</h6>
+                <div class="footer-classic-item-block">
+                  <ul class="list list-1">
+                    <li><a href="#">Send a Message</a></li>
+                    <li><a href="contact-us.html">Contacts</a></li>
+                    <li><a href="#">Request a Callback</a></li>
+                  </ul>
+                  <ul class="list-inline list-inline-md">
+                    <li><a class="link-2 icon mdi mdi-instagram" href="#"></a></li>
+                    <li><a class="link-2 icon mdi mdi-facebook" href="#"></a></li>
+                    <li><a class="link-2 icon mdi mdi-youtube-play" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container mt-0">
+          <div class="divider-2"></div>
+        </div>
+        <div class="footer-classic-aside">
+          <div class="container">
+            <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>ispeak</span><span>. All rights reserved.&nbsp;</span><a href="privacy-policy.html">Privacy Policy</a><span>.</span><span> Design&nbsp;by&nbsp; EXCLthemes</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
