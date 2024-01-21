@@ -197,80 +197,74 @@
 
             <!--how to book-->
             
-              <div class="container text-center py-5">
-                <h2>Please Fill in the details below in order for us to organize<br> get back to you with the confirmation.</h2>
-                <div class="row row-50 justify-content-center">
-                  <div class="col-lg-8">
-                    <article class="box-4">
-                      <div class="box-6-inner">
-                       
-                        <!-- RD Mailform-->
-                        <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label form-label-outside" for="form-3-title">Full Name</label>
-                            <input class="form-input" id="form-3-title" type="text" name="name" data-constraints="@Required"/>
-                            <div class="icon form-icon mdi mdi-border-color"></div>
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label form-label-outside" for="form-3-date"></label>
-                            <input class="form-input" id="form-3-date" type="date" name="date" data-constraints="@Required" data-time-picker="date"/>
-                            <div class="icon form-icon mdi mdi-calendar-text"></div>
-                          </div>
-                          <div class="form-wrap form-wrap-icon">
-                            <label class="form-label" for="form-3-email">E-mail Address</label>
-                            <input class="form-input" id="form-3-email" type="email" name="email" data-constraints="@Email @Required"/>
-                            <div class="icon form-icon mdi mdi-email-outline"></div>
-                          </div>
-
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="form-input" id="form-3-city" type="text" name="city" data-constraints="@city"/>
-                            <label class="form-label" for="form-3-city">Country, city</label>
-                            <div class="icon form-icon mdi mdi-city"></div>
-                          </div>
-
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interactio" id="exampleDataList" data-constraints="@Interaction">
-                            <label class="form-label" for="form-3-Interaction">n</label>
-                            <div class="icon form-icon mdi mdi-city"></div>
-                            <datalist id="datalistOptions">
-                              <option value="One-One">
-                                <option value="Group">
-                              </datalist>
-                          </div>
-
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Package" id="exampleDataList" data-constraints="@Package">
-                            <label class="form-label" for="form-3-Package"></label>
-                            <div class="icon form-icon mdi mdi-package"></div>
-                            <datalist id="datalistOptions">
-                              <option value="30-60 Mins">
-                                <option value="60-90 Mins">
-                              </datalist>
-                          </div>
-
-                        
-                          <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Location" id="location" data-constraints="@city">
-                            <label class="form-label" for="form-3-location"></label>
-                            <div class="icon form-icon mdi mdi-map-marker-radius"></div>
-                            <datalist id="datalistOptions">
-                              <option value="Outdoors">
-                                <option value="Indoor">
-                                <option value="Remotely"></option>
-                              </datalist>
-                          </div>
-
-
-
-                          <div class="form-wrap mt-xl-55 text-center">
-                            <button class="button1 w-50 button-lg  button-primary1" type="submit"> <b>Request</b></button>
-                          </div>
-                        </form>
-                      </div>
-                    </article>
+    <!-- Get in Touch-->
+    <section class="section section-lg bg-gray-100 justify-content-center">
+      <div class="container justify-content-center BORDER BORDER-1">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-black text-uppercase fw-bold wow fadeIn ">Get in Touch</h2>
+            <article class="box-7 mt-md-45 mt-xxl-70 wow fadeIn" data-wow-delay=".05s">
+              <!-- RD Mailform-->
+              <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="row row-30">
+                  <div class="col-md-6">
+                    <div class="form-wrap form-wrap-icon">
+                      <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-name">Name</label>
+                      <div class="icon form-icon mdi mdi-account-outline text-primary"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap form-wrap-icon">
+                      <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="contact-email">E-mail</label>
+                      <div class="icon form-icon mdi mdi-email-outline text-primary"></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap form-wrap-icon">
+                      <label class="form-label" for="contact-message">Message</label>
+                      <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                      <div class="icon form-icon mdi mdi-message-outline text-primary"></div>
+                    </div>
                   </div>
                 </div>
+                <div class="form-wrap form-wrap-button">
+                  <button class="button button-lg button-primary" type="submit">Send</button>
+                </div>
+              </form>
+            </article>
+          </div>
+          <!-- <div class="col-lg-4">
+            <h2 class="text-white text-uppercase fw-bold wow fadeIn">Our Teachers</h2>
+            <div class="row row-30 row-md-50 mt-md-45 mt-xxl-70">
+              <div class="col-sm-6 col-lg-12 wow fadeIn" data-wow-delay=".05s">
+                <!-- Profile Light-->
+                <!-- <article class="profile-light"><img class="profile-light-image" src="images/home-3-6-95x95.jpg" alt="" width="95" height="95"/>
+                  <div class="profile-light-main">
+                    <p class="profile-light-position text-white-lighter">English teacher</p>
+                    <h5 class="profile-light-name text-white">Sam Johnson</h5>
+                  </div>
+                </article>
+              </div> -->
+              <!-- <div class="col-sm-6 col-lg-12 wow fadeIn" data-wow-delay=".1s">
+                Profile Light
+                <article class="profile-light"><img class="profile-light-image" src="images/home-3-7-95x95.jpg" alt="" width="95" height="95"/>
+                  <div class="profile-light-main">
+                    <p class="profile-light-position text-white-lighter">German Teacher</p>
+                    <h5 class="profile-light-name text-white">Pamela Reed</h5>
+                  </div>
+                </article> -->
+              <!-- </div>
+              <div class="col-sm-6 col-lg-12 wow fadeIn" data-wow-delay=".15s">
+                <p class="big mt-md-30 mt-xl-50 text-white">9 Valley St. Brooklyn, NY 11203</p>
+                <article class="box-inline-1"><span class="icon mdi mdi-phone"></span><a href="tel:#">1-800-346-6277</a></article>
               </div>
+            </div>
+          </div> --> 
+        </div>
+      </div>
+    </section>
             <!--how to book end-->
 
             
@@ -338,7 +332,7 @@
                   <ul class="list-inline list-inline-md">
                     <li><a class="link-2 icon mdi mdi-instagram" href="https://www.instagram.com/merizo24"></a></li>
                     <li><a class="link-2 icon mdi mdi-facebook" href="https://www.facebook.com/profile.php?id=61555749926566"></a></li>                   
-                    <li><a class="link-2 icon mdi mdi-email" href="mailto:contact@merizo.co.uk"></a></li>
+                    <BR><li><a class="link-2 icon mdi mdi-email" href="mailto:contact@merizo.co.uk"> contact@merizo.co.uk</a></li>
                   </ul>
                 </div>
               </div>
