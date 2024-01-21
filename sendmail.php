@@ -6,13 +6,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Message header
     $message = "<html><body>";
-    $message .= "<table style='border: 1px solid black;'>";
+    $message .= "<table style='border: 1px solid black;width:100%;'>";
     $message .= "<tr><th style='border: 1px solid black;'>Field</th><th style='border: 1px solid black;'>Value</th></tr>";
 
     // Iterate over POST data and append to the message
     foreach ($_POST as $key => $value) {
         $message .= "<tr>";
-        $message .= "<td style='border: 1px solid black;'>".htmlspecialchars($key)."</td>";
+        $message .= "<td style='border: 1px solid black; width:150px;'>".htmlspecialchars($key)."</td>";
         $message .= "<td style='border: 1px solid black;'>".htmlspecialchars($value)."</td>";
         $message .= "</tr>";
     }
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if(mail($to,$subject,$message,$headers)) {
-        echo 'Message sent successfully!';
+        echo 'MF000';
     } else {
         echo 'Message sending failed.';
     }
