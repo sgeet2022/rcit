@@ -1270,7 +1270,8 @@ a.box-3-play:hover::after {
 	.box-7 {
 		max-width: 700px;
 		padding: 35px 40px 55px;
-		margin-right: 30px;
+		/* margin-right: 30px; */
+		margin: auto;
 	}
 }
 
@@ -11180,8 +11181,8 @@ html.rd-navbar-fixed-linked .rd-navbar-wrap {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
 	width: auto;
 	height: auto;
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 100px;
+	max-height: 100px;
 }
 
 .rd-navbar-classic.rd-navbar-static .rd-navbar-megamenu {

@@ -334,7 +334,7 @@
                       <div class="box-6-inner">
                        
                         <!-- RD Mailform-->
-                        <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <form class="rd-form rd-mailform form-lg" data-form-output="form-output-global" data-form-type="order" method="post" action="bat/rd-mailform.php">
                           <div class="form-wrap form-wrap-icon">
                             <label class="form-label form-label-outside" for="form-3-title">Full Name</label>
                             <input class="form-input" id="form-3-title" type="text" name="name" data-constraints="@Required"/>
@@ -358,8 +358,8 @@
                           </div>
 
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Interaction" name="interaction" id="interaction" data-constraints="@SelectRequired ">
+                            <label class="form-label" for="interaction"></label>
                             <div class="icon form-icon mdi mdi-gesture-tap"></div>
                             <datalist id="datalistOptions">
                               <option value="One-One">
@@ -368,30 +368,26 @@
                           </div>
 
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Package" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions2" placeholder="Choose Package" name="package" id="package" data-constraints="@SelectRequired ">
+                            <label class="form-label" for="package"></label>
                             <div class="icon form-icon mdi mdi-package"></div>
-                            <datalist id="datalistOptions">
-                              <option value="30-60 Mins">
-                                <option value="60-90 Mins">
+                            <datalist id="datalistOptions2">
+                              <option value="30-60 Mins">30-60 Mins</option>
+                                <option value="60-90 Mins">60-90 Mins</option>
                               </datalist>
                           </div>
 
                         
                           <div class="form-wrap form-wrap-icon">
-                            <input class="py-3 ps-5 form-input" list="datalistOptions" placeholder="Choose Location" id="exampleDataList" data-constraints="@city">
-                            <label class="form-label" for="form-3-city"></label>
+                            <input class="py-3 ps-5 form-input" list="datalistOptions3" placeholder="Choose Location" name="location" id="location" data-constraints="@SelectRequired ">
+                            <label class="form-label" for="location></label>
                             <div class="icon form-icon mdi mdi-map-marker-radius"></div>
-                            <datalist id="datalistOptions">
-                              <option value="Outdoors">
-                                <option value="Indoor">
-                                <option value="Remotely"></option>
+                            <datalist id="datalistOptions3">
+                              <option value="Indoor">Indoor</option>
+                              <option value="Outdoors">Outdoors</option>
+                                <option value="Remotely">Remotely</option>
                               </datalist>
                           </div>
-
-
-
-
                           <div class="form-wrap mt-xl-55 text-center">
                             <input type="hidden" data-form-type="order" value="order"/>
                             <button class="button1 w-50 button-lg  button-primary1" type="submit"> <b>Request</b></button>
@@ -738,7 +734,7 @@
         <div class="footer-classic-main">
           <div class="container">
             <div class="footer-classic-layout justify-content-sm-around justify-content-md-between divider-4">
-              <div class="footer-classic-layout-item"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo.png"" alt="" width="110" height="39"/><img class="brand-logo-light" src="images/logo-inverse-110x39.svg" alt="" width="110" height="39"/></a>
+              <div class="footer-classic-layout-item"><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo.png"" style="width:150px;"/><img class="brand-logo-light" src="images/logo-inverse-110x39.svg" style="width:150px;"/></a>
                 <div class="footer-classic-item-block footer-classic-item-block-1">
                   <h6>10000+ Satisfied Students</h6>
                   <div class="owl-carousel-quote-light">
