@@ -1,9 +1,0 @@
-mixin post-classic(obj)
-	// Post Classic
-	article.post-classic&attributes(attributes)
-		a.post-classic-figure(href=obj.link ? obj.link : links.post): +jpg(obj.img).post-classic-image
-		time.post-classic-time(datetime=obj.time.datetime)=obj.time.time
-		.post-classic-divider
-		p.post-classic-title.fw-medium.link-black: a(href=obj.link ? obj.link : links.post)=obj.title
-
-
