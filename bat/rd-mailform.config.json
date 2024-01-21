@@ -1,8 +1,8 @@
 {
   "useSmtp": false,
-  "host": "stmp.gmail.com",
+  "host": "stmp.merizo.co.uk",
   "port": 465,
-  "username": "demo@gmail.com",
-  "password": "demopassword",
-  "recipientEmail": "demo@gmail.com"
+  "username": "admin@merizo.co.uk",
+  "password": "IE=6TBh=6)W!",
+  "recipientEmail": "pankaj250483@gmail.com"
 }
