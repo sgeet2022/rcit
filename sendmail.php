@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email recipient and subject
-    $to = 'pankaj250483@gmail.com';
+    $to = 'contact@merizo.co.uk';
     $subject = 'Form Submission';
 
     // Message header
